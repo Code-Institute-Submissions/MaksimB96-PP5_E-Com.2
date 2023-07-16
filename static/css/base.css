@@ -3,6 +3,7 @@
     --textblk: #000;
     --textwhite: #fff;
     --blackback: #000;
+    --main1: #FFD700;
 }
 
 /* ------------------------------------------Home Page */
@@ -30,6 +31,7 @@ body {
     text-transform: uppercase;
     font-family: 'Abril Fatface',
         cursive;
+    color: var(--main1);
 }
 
 .logo-link {
@@ -42,9 +44,9 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: var(--blackback);
-    color: var(--textwhite);
+.btn-gold {
+    background: var(--main1);
+    color: var(--textblk);
 }
 
 .shop-now-button:hover,
@@ -57,12 +59,20 @@ body {
     color: var(--blackback);
 }
 
+.text-gold {
+    color: var(--main1) !important;
+}
+
 .text-black {
     color: #000 !important;
 }
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: var(--blackback);
 }
 
 /* ------------------------------------------Home Page Media Query */
