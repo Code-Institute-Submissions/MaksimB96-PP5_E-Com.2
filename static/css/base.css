@@ -28,6 +28,8 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'Abril Fatface',
+        cursive;
 }
 
 .logo-link {
@@ -43,4 +45,45 @@ body {
 .btn-black {
     background: var(--blackback);
     color: var(--textwhite);
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: var(--blackback);
+    color: var(--textwhite);
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* ------------------------------------------Home Page Media Query */
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
 }
