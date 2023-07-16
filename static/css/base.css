@@ -1,0 +1,46 @@
+/* ------------------------------------------Root Colors */
+:root {
+    --textblk: #000;
+    --textwhite: #fff;
+    --blackback: #000;
+}
+
+/* ------------------------------------------Home Page */
+html {
+    height: 100%;
+}
+
+body {
+    background: url('media/honey_bee_home.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: var(--textblk);
+}
+
+/* Bulma inspo from boutique ado */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.logo-link {
+    width: fit-content;
+}
+
+.shop-now-btn {
+    background: var(--textblk);
+    color: var(--textwhite);
+    min-width: 260px;
+}
+
+.btn-black {
+    background: var(--blackback);
+    color: var(--textwhite);
+}
