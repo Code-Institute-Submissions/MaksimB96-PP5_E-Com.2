@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: url('media/honey_bee_home.jpg') no-repeat center center;
+    background: url('/media/honey-bee.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: var(--textblk);
@@ -53,8 +53,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: var(--blackback);
-    color: var(--textwhite);
+    background: var(--textwhite);
+    color: var(--blackback);
 }
 
 .text-black {
