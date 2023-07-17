@@ -10,5 +10,17 @@
 {% endblock %}
 
 {% block content %}
+<img class="hero-bee" src="/media/honey-bee.jpg" alt="background-image">
 
+<script>
+    const nav = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56){
+            nav.classList.add('nav-scroll');
+        } else if (window.scrollY < 56){
+            nav.classList.remove('nav-scroll');
+        }
+    });
+</script>
 {% endblock %}

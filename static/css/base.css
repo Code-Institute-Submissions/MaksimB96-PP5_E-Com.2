@@ -1,106 +1,15 @@
-/* ------------------------------------------Root Colors */
-:root {
-    --textblk: #000;
-    --textwhite: #fff;
-    --blackback: #000;
-    --main1: #FFD700;
+.hero-bee {
+    height: calc(100vh + 56px);
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.8);
 }
 
-/* ------------------------------------------Home Page */
-html {
-    height: 100%;
+.navbar {
+    transition: 0.5s;
 }
 
-body {
-    background: url('/media/honey-bee.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    color: var(--textblk);
-}
-
-
-
-/* Bulma inspo from boutique ado */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.logo-font {
-    text-transform: uppercase;
-    font-family: 'Abril Fatface',
-        cursive;
-    color: var(--main1);
-}
-
-.logo-link {
-    width: fit-content;
-}
-
-.body-font {
-    font-family: font-family: 'Lato', sans-serif;
-    ;
-}
-
-.shop-now-btn {
-    background: var(--textblk);
-    color: var(--textwhite);
-    min-width: 260px;
-}
-
-.btn-gold {
-    background: var(--main1);
-    color: var(--textblk);
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: var(--textwhite);
-    color: var(--blackback);
-}
-
-.text-gold {
-    color: var(--main1) !important;
-}
-
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: var(--blackback);
-}
-
-/* ------------------------------------------Home Page Media Query */
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
+.nav-scroll {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
