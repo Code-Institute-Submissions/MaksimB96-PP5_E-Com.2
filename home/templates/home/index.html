@@ -10,16 +10,25 @@
 {% endblock %}
 
 {% block content %}
-<img class="hero-bee" src="/media/honey-bee.jpg" alt="background-image">
+<section>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container y-axis-align">
+            <h1 class="display-4 head-text">Got Honey?</h1>
+            <p class="lead body-text">This is a modified jumbotron that occupies the entire horizontal space of its
+                parent.
+            </p>
+        </div>
+    </div>
+</section>
 
 <script>
     const nav = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 56) {
+        if (window.scrollY >= 20) {
             nav.classList.remove('navbar-light');
             nav.classList.add('nav-scroll', 'navbar-dark');
-        } else if (window.scrollY < 56) {
+        } else if (window.scrollY < 20) {
             nav.classList.remove('nav-scroll', 'navbar-dark');
             nav.classList.add('navbar-light');
 
