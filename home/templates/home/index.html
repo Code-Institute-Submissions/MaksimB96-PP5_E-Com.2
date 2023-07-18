@@ -14,12 +14,15 @@
 
 <script>
     const nav = document.querySelector('.navbar');
-    
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 56){
-            nav.classList.add('nav-scroll');
-        } else if (window.scrollY < 56){
-            nav.classList.remove('nav-scroll');
+        if (window.scrollY >= 56) {
+            nav.classList.remove('navbar-light');
+            nav.classList.add('nav-scroll', 'navbar-dark');
+        } else if (window.scrollY < 56) {
+            nav.classList.remove('nav-scroll', 'navbar-dark');
+            nav.classList.add('navbar-light');
+
         }
     });
 </script>
