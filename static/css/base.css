@@ -1,3 +1,26 @@
+/* ------------------------------------root */
+:root {
+    --theme1: #fff;
+    --theme2: #000;
+    --theme3: #FFD700;
+}
+
+/* ------------------------------------custom helper classes */
+.head-text {
+    font-family: 'Abril Fatface',
+        cursive;
+}
+
+.body-text {
+    font-family: 'Lato',
+        sans-serif;
+}
+
+/* ------------------------------------index-styling */
+body {
+    overflow-x: hidden;
+}
+
 .hero-bee {
     height: calc(100vh + 56px);
     width: 100vw;
@@ -12,4 +35,14 @@
 .nav-scroll {
     background-color: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-family: 'Abril Fatface',
+        cursive;
+}
+
+.nav-link {
+    font-family: 'Lato',
+        sans-serif;
 }
