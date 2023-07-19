@@ -16,17 +16,17 @@
         sans-serif;
 }
 
-/* ------------------------------------index-styling */
+/* ------------------------------------Base-styling */
 body {
     overflow-x: hidden;
 }
-
 
 
 .navbar {
     transition: 0.5s;
 
 }
+
 
 .nav-scroll {
     background-color: black;
@@ -43,9 +43,60 @@ body {
 .nav-link {
     font-family: 'Lato',
         sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
+.searchbar {
+    position: relative;
+    min-width: 50px;
+    width: 0%;
+    height: 50px;
+    float: right;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.searchbar-input {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: var(--theme1);
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+    font-size: 20px;
+    color: var(--theme2);
+}
+
+.searchbar-icon,
+.searchbar-submit {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    font-family: 'Lato',
+            sans-serif;
+    font-size: 22px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--theme1);
+    background: var(--theme2);
+}
+
+.searchbar-open {
+    width: 100%;
+}
+
+/* ------------------------------------Index-styling */
 .jumbotron {
     height: 100vh;
     background-image: url('/media/honey-bee.jpg');
@@ -56,4 +107,9 @@ body {
 
 .y-axis-align {
     padding-top: 10%;
+}
+
+.shop-now-btn {
+    background: var(--theme2);
+    color: var(--theme1);
 }

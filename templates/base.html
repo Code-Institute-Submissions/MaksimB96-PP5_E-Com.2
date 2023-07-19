@@ -60,6 +60,14 @@
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="container">
+            <form class="form-inline searchbar ml-auto method=" get" action="">
+                <input type="search" placeholder="Search Items" name="q" class="searchbar-input" required>
+                <input type="submit" class="searchbar-submit" value="GO">
+                <span class="searchbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+            </form>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -74,9 +82,9 @@
                         Categories
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Honey</a>
+                        <a class="dropdown-item" href="#">Clothing</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
                     </div>
                 </li>
             </ul>
@@ -95,7 +103,31 @@
     {% endblock %}
 
     {% block postloadjs %}
+    <script>
+        $(document).ready(function () {
+            var submitIcon = $('.searchbar-icon');
+            var inputArea = $('.searchbar-input');
+            var searchBar = $('.searchbar');
+            var isExpanded = false;
+
+            submitIcon.click(function () {
+                if (isExpanded == false) {
+                    searchBar.addClass('searchbar-open');
+                    inputArea.focus();
+                    isExpanded = true;
+                } else {
+                    searchBar.removeClass('searchbar-open');
+                    inputArea.focusout();
+                    isExpanded = false;
+                }
+            });
+
+
+        })
+    </script>
     {% endblock %}
+
+
 
 </body>
 
