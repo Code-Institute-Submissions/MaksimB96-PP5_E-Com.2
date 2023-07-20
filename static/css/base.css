@@ -3,6 +3,7 @@
     --theme1: #fff;
     --theme2: #000;
     --theme3: #FFD700;
+    --drkgld: #ac9020;
 }
 
 /* ------------------------------------custom helper classes */
@@ -78,7 +79,7 @@ body {
     position: absolute;
     top: 0;
     font-family: 'Lato',
-            sans-serif;
+        sans-serif;
     font-size: 22px;
     right: 0;
     padding: 0;
@@ -103,6 +104,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 0;
+}
+
+.hero-text {
+    background-color: rgba(232, 208, 26, 0.5);
 }
 
 .y-axis-align {
@@ -112,4 +118,24 @@ body {
 .shop-now-btn {
     background: var(--theme2);
     color: var(--theme1);
+}
+
+#sec-a i {
+    font-size: 30px;
+}
+
+.sec-a-p {
+    font-size:
+        30px;
+}
+
+.sec-b-height {
+    height: 400px;
+}
+
+.product-image {
+    background-image: url('/media/honey-haven-products.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
