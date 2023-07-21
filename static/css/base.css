@@ -4,6 +4,7 @@
     --theme2: #000;
     --theme3: #FFD700;
     --drkgld: #ac9020;
+    --grey: #5A5A5A;
 }
 
 /* ------------------------------------custom helper classes */
@@ -138,4 +139,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.toh-text {
+    background: var(--grey);
 }
