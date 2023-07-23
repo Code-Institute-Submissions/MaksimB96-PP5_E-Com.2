@@ -104,7 +104,32 @@ body {
 
 /* ------------------------------------Footer-styling */
 
+.footer-head {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
+.list-unstyled li a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.subscribe-footer .form-group input {
+    border-radius: 0;
+}
+
+.subscribe-footer .form-group .footer-submit {
+    display: block;
+    width: 160px;
+    font-size: 16px;
+    font-family: 'Lato',
+        sans-serif;
+}
+
+.logo-footer {
+    
+}
 
 /* ------------------------------------Index-styling */
 .jumbotron {
