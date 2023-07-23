@@ -18,6 +18,10 @@
         sans-serif;
 }
 
+.gold-text {
+    color: var(--drkgld);
+}
+
 /* ------------------------------------Base-styling */
 body {
     overflow-x: hidden;
@@ -98,6 +102,10 @@ body {
     width: 100%;
 }
 
+/* ------------------------------------Footer-styling */
+
+
+
 /* ------------------------------------Index-styling */
 .jumbotron {
     height: 100vh;
@@ -108,9 +116,6 @@ body {
     margin-bottom: 0;
 }
 
-.hero-text {
-    background-color: rgba(232, 208, 26, 0.5);
-}
 
 .y-axis-align {
     padding-top: 10%;
@@ -142,5 +147,9 @@ body {
 }
 
 .toh-text {
+    background: var(--grey);
+}
+
+#sec-d {
     background: var(--grey);
 }
