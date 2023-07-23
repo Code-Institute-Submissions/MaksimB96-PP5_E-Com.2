@@ -22,6 +22,10 @@
     color: var(--drkgld);
 }
 
+::placeholder {
+    font-family:'Lato',
+        sans-serif;;
+}
 /* ------------------------------------Base-styling */
 body {
     overflow-x: hidden;
@@ -111,12 +115,28 @@ body {
 }
 
 .list-unstyled li a{
-    list-style: none;
+    color: var(--drkgld);
+}
+
+.list-unstyled li a:hover{
+    color: var(--theme1);
     text-decoration: none;
+    transition: .5s;
+}
+
+.socials-icon{
+    font-size: 25px;
+    color: var(--drkgld);
+}
+
+.social-seg a:hover {
+    color: var(--theme1);
+    transition: .5s;
 }
 
 .subscribe-footer .form-group input {
     border-radius: 0;
+    border: none;
 }
 
 .subscribe-footer .form-group .footer-submit {
@@ -125,10 +145,15 @@ body {
     font-size: 16px;
     font-family: 'Lato',
         sans-serif;
+    color: var(--theme1);
+    background-color: var(--theme2);
+    border: none;
 }
 
+
+
 .logo-footer {
-    
+    height: 150px;
 }
 
 /* ------------------------------------Index-styling */
