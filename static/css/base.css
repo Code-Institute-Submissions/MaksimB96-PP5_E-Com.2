@@ -114,6 +114,10 @@ body {
     letter-spacing: 1px;
 }
 
+.list-unstyled {
+    color: var(--drkgld);
+}
+
 .list-unstyled li a{
     color: var(--drkgld);
 }
