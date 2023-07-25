@@ -102,8 +102,110 @@
             "rating": 4.6,
             "image": "bee-candle.jpg"
         }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh009",
+            "name": "Bee's Wax Wrap",
+            "description": "Keep your items sealed longer with our organic bee wrap",
+            "price": 53.99,
+            "category": 5,
+            "rating": 4.6,
+            "image": "beewax-wrap.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh010",
+            "name": "Honeycomb Frame",
+            "description": "Honeycomb starter frame for your hives",
+            "price": 53.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "honey-frame.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh011",
+            "name": "Bee Hive Tower",
+            "description": "Bee Hive to store all your hard working bees",
+            "price": 53.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "honey-frame.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh012",
+            "name": "Tea Mug",
+            "description": "Bee graphic Mug",
+            "price": 53.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "bee-merch.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh013",
+            "name": "Bee Key-chain",
+            "description": "Keychain with Bee graphic",
+            "price": 53.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "bee-merch.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh014",
+            "name": "Baseball Bee Cap",
+            "description": "Baseball cap with Bee graphic",
+            "price": 53.99,
+            "category": 2,
+            "rating": 4.6,
+            "image": "bee-merch.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh015",
+            "name": "T-shirts",
+            "description": "T-shirts with Bee graphic",
+            "price": 53.99,
+            "category": 2,
+            "rating": 4.6,
+            "image": "bee-merch.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh015",
+            "name": "Bee graphic Bottle",
+            "description": "Bottle (500ml) with Bee graphic",
+            "price": 53.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "bee-merch.jpg"
+        }
     }
-
-
    
 ]
