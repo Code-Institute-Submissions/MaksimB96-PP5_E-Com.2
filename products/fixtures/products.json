@@ -3,15 +3,93 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "pp5001340155",
+            "sku": "hh001",
             "name": "Large Honey Pot",
-            "description": "Large Hon",
+            "description": "Large Honey Pot - 500g",
             "price": 53.99,
             "category": 1,
             "rating": 4.6,
-            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-            "image": "DP0709201205510679M.jpg"
+            "image": "large-jar.jpg"
         }
     },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh002",
+            "name": "Small Honey Pot",
+            "description": "Small Honey Pot - 250g",
+            "price": 53.99,
+            "category": 1,
+            "rating": 4.6,
+            "image": "small-jar.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh003",
+            "name": "Large Honey Pot and Spoon",
+            "description": "Large Honey Pot - 250g with honey spoon bundle",
+            "price": 53.99,
+            "category": 1,
+            "rating": 4.6,
+            "image": "honey-jar-spoon.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh004",
+            "name": "Small Honey Pot with Spoon",
+            "description": "Small Honey Pot - 250g with honey spoon bundle",
+            "price": 53.99,
+            "category": 1,
+            "rating": 4.6,
+            "image": "honey-jar-spoon.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh005",
+            "name": "Honey Spoon",
+            "description": "Waste no honey with our wooden honey spoon!",
+            "price": 53.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "honey-spoon.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh006",
+            "name": "Bee-Keeper suit",
+            "description": "Keep yourself protected with our bee-keeping suit",
+            "price": 53.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "beekeeper-suit.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh006",
+            "name": "Bee-Keeper suit",
+            "description": "Keep yourself protected with our bee-keeping suit",
+            "price": 53.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "beekeeper-suit.jpg"
+        }
+    },
+
    
 ]
