@@ -6,7 +6,7 @@
             "sku": "hh001",
             "name": "Large Honey Pot",
             "description": "Large Honey Pot - 500g",
-            "price": 53.99,
+            "price": 14.99,
             "category": 1,
             "rating": 4.6,
             "image": "large-jar.jpg"
@@ -19,7 +19,7 @@
             "sku": "hh002",
             "name": "Small Honey Pot",
             "description": "Small Honey Pot - 250g",
-            "price": 53.99,
+            "price": 7.99,
             "category": 1,
             "rating": 4.6,
             "image": "small-jar.jpg"
@@ -32,7 +32,7 @@
             "sku": "hh003",
             "name": "Large Honey Pot and Spoon",
             "description": "Large Honey Pot - 250g with honey spoon bundle",
-            "price": 53.99,
+            "price": 16.99,
             "category": 1,
             "rating": 4.6,
             "image": "honey-jar-spoon.jpg"
@@ -45,7 +45,7 @@
             "sku": "hh004",
             "name": "Small Honey Pot with Spoon",
             "description": "Small Honey Pot - 250g with honey spoon bundle",
-            "price": 53.99,
+            "price": 8.99,
             "category": 1,
             "rating": 4.6,
             "image": "honey-jar-spoon.jpg"
@@ -58,7 +58,7 @@
             "sku": "hh005",
             "name": "Honey Spoon",
             "description": "Waste no honey with our wooden honey spoon!",
-            "price": 53.99,
+            "price": 3.99,
             "category": 4,
             "rating": 4.6,
             "image": "honey-spoon.jpg"
@@ -71,7 +71,7 @@
             "sku": "hh006",
             "name": "Bee-Keeper suit",
             "description": "Keep yourself protected with our bee-keeping suit",
-            "price": 53.99,
+            "price": 149.99,
             "category": 3,
             "rating": 4.6,
             "image": "beekeeper-suit.jpg"
@@ -84,7 +84,7 @@
             "sku": "hh007",
             "name": "Bee Balm",
             "description": "Keep your lips hydrated with our organic lip balm",
-            "price": 53.99,
+            "price": 8.99,
             "category": 5,
             "rating": 4.6,
             "image": "bee-balm.jpg"
@@ -97,7 +97,7 @@
             "sku": "hh008",
             "name": "Bee's Wax Candle",
             "description": "Light up your night with our Organic candles",
-            "price": 53.99,
+            "price": 11.99,
             "category": 5,
             "rating": 4.6,
             "image": "bee-candle.jpg"
@@ -110,7 +110,7 @@
             "sku": "hh009",
             "name": "Bee's Wax Wrap",
             "description": "Keep your items sealed longer with our organic bee wrap",
-            "price": 53.99,
+            "price": 10.99,
             "category": 5,
             "rating": 4.6,
             "image": "beewax-wrap.jpg"
@@ -123,7 +123,7 @@
             "sku": "hh010",
             "name": "Honeycomb Frame",
             "description": "Honeycomb starter frame for your hives",
-            "price": 53.99,
+            "price": 15.99,
             "category": 3,
             "rating": 4.6,
             "image": "honey-frame.jpg"
@@ -136,7 +136,7 @@
             "sku": "hh011",
             "name": "Bee Hive Tower",
             "description": "Bee Hive to store all your hard working bees",
-            "price": 53.99,
+            "price": 199.99,
             "category": 3,
             "rating": 4.6,
             "image": "honey-frame.jpg"
@@ -149,7 +149,7 @@
             "sku": "hh012",
             "name": "Tea Mug",
             "description": "Bee graphic Mug",
-            "price": 53.99,
+            "price": 6.99,
             "category": 4,
             "rating": 4.6,
             "image": "bee-merch.jpg"
@@ -162,7 +162,7 @@
             "sku": "hh013",
             "name": "Bee Key-chain",
             "description": "Keychain with Bee graphic",
-            "price": 53.99,
+            "price": 3.99,
             "category": 4,
             "rating": 4.6,
             "image": "bee-merch.jpg"
@@ -175,7 +175,7 @@
             "sku": "hh014",
             "name": "Baseball Bee Cap",
             "description": "Baseball cap with Bee graphic",
-            "price": 53.99,
+            "price": 9.99,
             "category": 2,
             "rating": 4.6,
             "image": "bee-merch.jpg"
@@ -188,7 +188,7 @@
             "sku": "hh015",
             "name": "T-shirts",
             "description": "T-shirts with Bee graphic",
-            "price": 53.99,
+            "price": 12.99,
             "category": 2,
             "rating": 4.6,
             "image": "bee-merch.jpg"
@@ -201,7 +201,7 @@
             "sku": "hh015",
             "name": "Bee graphic Bottle",
             "description": "Bottle (500ml) with Bee graphic",
-            "price": 53.99,
+            "price": 9.99,
             "category": 4,
             "rating": 4.6,
             "image": "bee-merch.jpg"
