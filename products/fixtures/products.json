@@ -78,18 +78,32 @@
         }
     },
     {
-        "pk": 6,
+        "pk": 7,
         "model": "products.product",
         "fields": {
-            "sku": "hh006",
-            "name": "Bee-Keeper suit",
-            "description": "Keep yourself protected with our bee-keeping suit",
+            "sku": "hh007",
+            "name": "Bee Balm",
+            "description": "Keep your lips hydrated with our organic lip balm",
             "price": 53.99,
-            "category": 3,
+            "category": 5,
             "rating": 4.6,
-            "image": "beekeeper-suit.jpg"
+            "image": "bee-balm.jpg"
         }
     },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "hh008",
+            "name": "Bee's Wax Candle",
+            "description": "Light up your night with our Organic candles",
+            "price": 53.99,
+            "category": 5,
+            "rating": 4.6,
+            "image": "bee-candle.jpg"
+        }
+    }
+
 
    
 ]
