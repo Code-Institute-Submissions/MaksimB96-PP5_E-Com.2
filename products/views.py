@@ -1,5 +1,5 @@
 from django.shortcuts import render
-form .models import Product
+from .models import Product
 
 
 def all_products(request):
