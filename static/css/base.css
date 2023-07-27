@@ -28,7 +28,7 @@
 }
 
 .nav-calc {
-    height: calc(100vh - 111px);
+    margin-top: 111px;
 }
 /* ------------------------------------Base-styling */
 body {
