@@ -33,15 +33,15 @@
                             <img src="{{ MEDIA_URL }}no-img.png" alt="{{ product.name }}" style="height: 380px; width: 380px;">
                         </a>
                         {% endif %}
-                        <div class="card-body head-text">
+                        <div class="card-body head-text pb-0">
                             <p>{{ product.name }}</p>
                         </div>
-                        <div class="card-footer bg-white border-0 text-left mb-2">
+                        <div class="card-footer bg-white border-0 text-left pt-0 mb-1">
                             <div class="row">
                                 <div class="col">
                                     <p class="lead text-left body-text">€{{ product.price }}</p>
                                     {% if product.rating %}
-                                    <small class="muted body-text"><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5</small>
+                                    <small class="muted body-text"><i class="fas fa-star mr-1 gold-text"></i> {{ product.rating }} / 5</small>
                                     {% else %}
                                     <small class="text-muted body-text">No Rating</small>
                                     {% endif %}
