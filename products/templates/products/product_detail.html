@@ -12,9 +12,29 @@
 {% block content %}
 <div class="container-fluid nav-calc">
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2 class="head-text">Products</h2>
-            <hr class="mb-2 w-50">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            {% if product.image %}
+            <a href="{{ product.image.url }}" target="_blank">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid"
+                    style="height: 380px; width: 380px;">
+            </a>
+            {% else %}
+            <a href="">
+                <img src="{{ MEDIA_URL }}no-img.png" alt="{{ product.name }}" style="height: 380px; width: 380px;">
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container">
+                <p class="mb-0 head-text">{{ product.name }}</p>
+                <p class="lead text-left body-text">€{{ product.price }}</p>
+                {% if product.rating %}
+                <small class="text-muted body-text"><i class="fas fa-star mr-1"></i>{{ product.rating}} / 5</small>
+                {% else %}
+                <small class="text-muted body-text">No Rating</small>
+                {% endif %}
+                <p class="mt-2 body-text">{{ product.description }}</p>
+            </div>
         </div>
     </div>
 </div>

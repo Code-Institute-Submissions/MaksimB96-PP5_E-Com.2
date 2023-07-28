@@ -17,7 +17,7 @@ def all_products(request):
 def product_detail(request, product_id):
     """View that renders selected Product"""
 
-    product = get_object_or_404(product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
