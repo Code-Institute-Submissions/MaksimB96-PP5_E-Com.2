@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header%}
+<div class="header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid nav-calc">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="head-text">Products</h2>
+            <hr class="mb-2 w-50">
+        </div>
+    </div>
+</div>
+
+<script>
+    const nav = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 20) {
+            nav.classList.remove('navbar-light');
+            nav.classList.add('nav-scroll', 'navbar-dark');
+        } else if (window.scrollY < 20) {
+            nav.classList.remove('nav-scroll', 'navbar-dark');
+            nav.classList.add('navbar-light');
+
+        }
+    });
+</script>
+{% endblock %}
