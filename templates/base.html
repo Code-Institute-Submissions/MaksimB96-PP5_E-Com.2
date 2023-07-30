@@ -61,7 +61,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <form class="form-inline searchbar ml-auto method=" get" action="">
+            <form class="form-inline searchbar ml-auto" method="get" action="">
                 <input type="search" placeholder="Search Items" name="q" class="searchbar-input" required>
                 <input type="submit" class="searchbar-submit" value="GO">
                 <span class="searchbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
@@ -83,6 +83,24 @@
                         </div>
                     </a>
                 </li>
+
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <li class="nav-item">
+                    <a href="" class="nav-link body-text">
+                        Manage Products
+                    </a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a href="" class="nav-link">My Orders</a>
+                    <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+                </li>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
+                <a href="{% url 'account_login' %}" class="nav-link">Login</a>
+                {% endif %}
+
                 <li class="nav-item active">
                     <a class="nav-link body-text" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
                 </li>
