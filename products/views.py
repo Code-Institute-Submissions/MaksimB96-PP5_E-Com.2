@@ -9,7 +9,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    category = None
+    categories = None
 
     if request.GET:
         if 'category' in request.GET:
@@ -17,13 +17,12 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "Please specify search criteria!")
                 return redirect(reverse('products'))
-        
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 

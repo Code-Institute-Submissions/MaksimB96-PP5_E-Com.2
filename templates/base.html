@@ -69,21 +69,20 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                        <div class="text-center">
-                            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                            <p class="my-0">
-                                {% if grand_total %}
-                                ${{ grand_total|floatformat:2 }}
-                                {% else %}
-                                €0.00
-                                {% endif %}
-                            </p>
-                        </div>
-                    </a>
+                <li class="nav-item active ">
+                    <a class="nav-link body-text" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
                 </li>
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'products' %}?category=honey">Honey</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=apparel">Clothing</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=accessories">Accessories</a>
+                    </div>
+                </li>
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <li class="nav-item">
@@ -100,21 +99,21 @@
                 <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
                 <a href="{% url 'account_login' %}" class="nav-link">Login</a>
                 {% endif %}
-
-                <li class="nav-item active">
-                    <a class="nav-link body-text" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categories
+                <li class="nav-item">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                            <p class="my-0">
+                                {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                                {% else %}
+                                €0.00
+                                {% endif %}
+                            </p>
+                        </div>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'products' %}?category=honey">Honey</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=apparel">Clothing</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=accessories">Accessories</a>
-                    </div>
                 </li>
+
             </ul>
         </div>
     </nav>
@@ -139,8 +138,8 @@
                                 Contact
                             </h2>
                             <ul class="list-unstyled">
-                                <li class="body-text"><i class="fa-solid fa-square-envelope"></i> example@email.com</li>
-                                <li class="body-text"><i class="fa-solid fa-square-phone"></i> 086-123-1234</li>
+                                <li class="body-text my-2"><i class="fa-solid fa-square-envelope"></i> example@email.com</li>
+                                <li class="body-text my-2"><i class="fa-solid fa-square-phone"></i> 086-123-1234</li>
                             </ul>
                         </div>
                         <div class="col-md-4 mb-md-0 mb-4">
@@ -148,10 +147,11 @@
                                 Products
                             </h2>
                             <ul class="list-unstyled">
-                                <li><a href="#" class="py-1 d-block body-text">Honey</a></li>
-                                <li><a href="#" class="py-1 d-block body-text">Lip-Balms</a></li>
-                                <li><a href="#" class="py-1 d-block body-text">Accessories</a></li>
-                                <li><a href="#" class="py-1 d-block body-text">Apparel</a></li>
+                                <li><a href="{% url 'products' %}?category=honey" class="py-1 d-block body-text">Honey</a></li>
+                                <li><a href="{% url 'products' %}?category=bees-wax" class="py-1 d-block body-text">Bee-Wax</a></li>
+                                <li><a href="{% url 'products' %}?category=bee-gear" class="py-1 d-block body-text">Beekeeper Gear</a></li>
+                                <li><a href="{% url 'products' %}?category=accessories" class="py-1 d-block body-text">Accessories</a></li>
+                                <li><a href="{% url 'products' %}?category=apparel" class="py-1 d-block body-text">Apparel</a></li>
                             </ul>
                         </div>
                     </div>
