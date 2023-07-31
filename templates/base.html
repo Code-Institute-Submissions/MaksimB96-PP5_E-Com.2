@@ -84,9 +84,9 @@
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=bees_wax">Bee-Wax</a>
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=accessories">Accessories</a>
                         <hr class="w-100 bg-light">
-                        <a class="dropdown-item text-white " href="">By Rating</a>
-                        <a class="dropdown-item text-white " href="">By Price</a>
-                        <a class="dropdown-item text-white " href="">By Category</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=category&direction=asc">By Category</a>
                     </div>
                 </li>
                 {% if request.user.is_authenticated %}
