@@ -77,10 +77,16 @@
                         aria-haspopup="true" aria-expanded="false">
                         Categories
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'products' %}?category=honey">Honey</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=apparel">Clothing</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=accessories">Accessories</a>
+                    <div class="dropdown-menu bg-dark border-0 body-text" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=honey">Honey</a>
+                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=apparel">Clothing</a>
+                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=bee_gear">Beekeeper Gear</a>
+                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=bees_wax">Bee-Wax</a>
+                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=accessories">Accessories</a>
+                        <hr class="w-100 bg-light">
+                        <a class="dropdown-item text-white " href="">By Rating</a>
+                        <a class="dropdown-item text-white " href="">By Price</a>
+                        <a class="dropdown-item text-white " href="">By Category</a>
                     </div>
                 </li>
                 {% if request.user.is_authenticated %}
