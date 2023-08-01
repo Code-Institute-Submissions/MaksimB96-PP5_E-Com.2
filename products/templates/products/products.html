@@ -14,6 +14,11 @@
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="head-text">Products</h2>
+            {% for c in current_categories %}
+            <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
+                <span class="p-2 mt-2 badge badge-white rounded-0 border border-dark body-text text-dark">{{ c.friendly_name }}</span>
+            </a>
+            {% endfor %}
             <hr class="mb-2 w-50">
         </div>
     </div>
@@ -42,7 +47,7 @@
                                     <p class="lead text-left body-text">€{{ product.price }}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
-                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="tex-muted">
+                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                         </a>
                                     </p>

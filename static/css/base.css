@@ -212,3 +212,9 @@ body {
 #sec-d {
     background: var(--grey);
 }
+
+/* ------------------------------------Products-styling */
+a.category-badge > span.badge:hover {
+    background: var(--theme2) !important;
+    color: var(--theme1) !important;
+}
