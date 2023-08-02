@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="nav-calc"></div>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="head-text mb-2">Shopping Bag</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                <div class="table-responsive rounded-0">
+                </div>
+                {% else %}
+                <p class="lead mb-5 body-text">
+                    Bag is empty!
+                    <a href="{% url 'products' %}" class="btn btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="body-text">Keep Shopping</span>
+                    </a>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+<script type="text/javascript">
+    const nav = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 20) {
+            nav.classList.remove('navbar-light');
+            nav.classList.add('nav-scroll', 'navbar-dark');
+        } else if (window.scrollY < 20) {
+            nav.classList.remove('nav-scroll', 'navbar-dark');
+            nav.classList.add('navbar-light');
+
+        }
+    });
+    
+</script>
+{% endblock %}
