@@ -38,7 +38,7 @@
                                 <p class="my-0 body-text">€{{ item.product.price }}</p>
                             </td>
                             <td class="p-3 w-25">
-                                <form action="" method="POST" class="update-form">
+                                <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <div class="input-group">
@@ -158,10 +158,25 @@
 
     })
 
+    //Updates quantity on click event in bag.html
+        $('.update-link').click(function (e) {
+            var form = $(this).prev('.update-form');
+            form.submit();
+        });
 
+        //Remove quantity on bag.html
+        $('.remove-item').click(function (e) {
+            var csrfToken = "{{ csrf_token }}";
+            var itemId = $(this).attr('id').split('remove_')[1];
+            var url = `/bag/remove/${itemId}`;
+            var data = { 'csrfmiddlewaretoken': csrfToken };
+
+            $.post(url, data).done(function () {
+                location.reload();
+            });
+        });
 </script>
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
-{% include 'templates/includes/update_delete_bag_script.html' %}
 {% endblock %}
 
