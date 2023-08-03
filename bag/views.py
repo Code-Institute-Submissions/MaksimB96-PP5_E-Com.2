@@ -51,7 +51,7 @@ def adjust_bag(request, item_id):
         else:
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
-                bag.pop[item_id]
+                bag.pop(item_id)
     else:
         if quantity > 0:
             bag[item_id] = quantity
@@ -72,7 +72,7 @@ def remove_from_bag(request, item_id):
         bag = request.session.get('bag', {})
 
         if size:
-            del bag[items_id]['items_by_size'][size]
+            del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
         else:
@@ -80,5 +80,6 @@ def remove_from_bag(request, item_id):
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
+
     except Exception as e:
         return HttpResponse(status=500)
