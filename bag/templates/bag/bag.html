@@ -32,6 +32,7 @@
                             </td>
                             <td class="p-3 w-25">
                                 <p class="my-0 body-text"><strong>{{ item.product.name }}</strong></p>
+                                <p class="my-0 body-text"><strong>Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %} N/A{% endif %}</strong></p>
                                 <p class="my-0 small text-muted body-text">SKU: {{ item.product.sku|upper }}</p>
                             </td>
                             <td class="p-3 w-25">
