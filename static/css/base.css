@@ -111,6 +111,21 @@ body {
     width: 100%;
 }
 
+.messages-container {
+    position: absolute;
+    top: 92px;
+    right: 22px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* ------------------------------------Footer-styling */
 
 .footer-head {
