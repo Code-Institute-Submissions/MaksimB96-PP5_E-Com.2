@@ -92,17 +92,14 @@
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Manage Products
                     </a>
-                    <div class="dropdown-menu body-text border-0">
+                {% endif %}
+                    <div class="dropdown-menu body-text border-0" aria-labelledby="navbarDropdownMenuLink2">
                         <a href="" class="dropdown-item text-white">My Orders</a>
                     </div>
-                </li>
-                {% endif %}
-                <li class="nav-item">
-                    <a href="" class="nav-link">My Orders</a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
@@ -128,7 +125,11 @@
     </nav>
 
     {% if messages %}
-    <div class="message-container"></div>
+    <div class="message-container">
+        {% for message on messages %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -198,6 +199,9 @@
 
     {% block postloadjs %}
     <script>
+        $('.toast').toast('show');
+    </script>
+    <script>
         $(document).ready(function () {
             var submitIcon = $('.searchbar-icon');
             var inputArea = $('.searchbar-input');
@@ -215,9 +219,7 @@
                     isExpanded = false;
                 }
             });
-
-
-        })
+        });
     </script>
     {% endblock %}
 

@@ -16,8 +16,7 @@
             <h2 class="head-text">Products</h2>
             {% for c in current_categories %}
             <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
-                <span class="p-2 mt-2 badge badge-white rounded-0 border border-dark body-text text-dark">{{
-                    c.friendly_name }}</span>
+                <span class="p-2 mt-2 badge badge-white rounded-0 border border-dark body-text text-dark">{{ c.friendly_name }}</span>
             </a>
             {% endfor %}
             <hr class="mb-2 w-50">
@@ -47,8 +46,7 @@
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
                         <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                         {% endif %}
-                        {{ products|length }} Products{% if search_term %} found for <strong>{{ search_term
-                            }}</strong>{% endif %}
+                        {{ products|length }} Products{% if search_term %} found for <strong>{{ search_term }}</strong>{% endif %}
                     </p>
                 </div>
             </div>
