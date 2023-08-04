@@ -20,6 +20,61 @@
             <p class="body-text text-muted">
                 Please Complete the form before purchase!
             </p>
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <fieldset class="rounded mx-3 mb-4">
+                    <legend class="fieldset-label body-text">Info:</legend>
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded mx-3 mb-4">
+                    <legend class="fieldset-label body-text">Delivery:</legend>
+                    {{ order_form.phone_number | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.town_or_city | as_crispy_field }}
+                    {{ order_form.street_address1 | as_crispy_field }}
+                    {{ order_form.street_address2 | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+                    <div class="form-check form-check-inline float-right">
+                        {% if user.is_authenticated %}
+                        <label for="id-save-info" class="form-check-label body-text">Save delivery Info!</label>
+                        <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info" checked>
+                        {% else %}
+                        <label for="id-save-info" class="form-check-label body-text">
+                            <a href="{% url 'account_signup' %}">Create an Account</a>or
+                            <a href="{% url 'account_login' %}">Login</a> to save this info!
+                        </label>
+                        {% endif %}
+                    </div>
+                </fieldset>
+                <fieldset class="rounded mx-3">
+                    <legend class="fieldset-label body-text small px-2 w-auto">Payment</legend>
+                    <div class="mb-3" id="card-element"></div>
+                    <div class="mb-3" id="card-errors" role="alert"></div>
+                </fieldset>
+
+                <div class="submit-button text-right">
+                    <a href="{% url 'view_bag' %}" class="btn">
+                        <span>
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="body-text">Adjust Bag</span>
+                    </a>
+                    <button id="submit-button" class="btn">
+                        <span class="body-text">Complete Order</span>
+                        <span>
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </button>
+                    <p class="small">
+                        <span>
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>
+                        <span>Your Card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </div>
