@@ -246,5 +246,11 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* ------------------------------------Product Detail-styling */
+/* ------------------------------------Product styling */
+
+.bag-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
