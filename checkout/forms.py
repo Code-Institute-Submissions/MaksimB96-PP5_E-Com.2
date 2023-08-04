@@ -8,7 +8,7 @@ class OrderForm(forms.ModelForm):
                   'street_address1', 'street_address2', 'town_or_city', 
                   'postcode', 'country', 'county',)
 
-    def __init__(*args, **kwargs):
+    def __init__(self, *args, **kwargs):
 
         super().__init__(*args, *kwargs)
         placeholders = {
@@ -18,7 +18,7 @@ class OrderForm(forms.ModelForm):
             'country': 'Country',
             'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
-            'street_address1': 'Street Address 1';,
+            'street_address1': 'Street Address 1',
             'street_adress2': 'Street Address 2',
             'county': 'County',
         }
