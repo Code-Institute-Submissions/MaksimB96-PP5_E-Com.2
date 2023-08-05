@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock%}
+
+{% block content %}
+<div class="nav-calc"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="head-text mb-2">Thank you for your purchase!</h2>
+            <p class="body-text muted">Your order: {}</p>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-7">
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    const nav = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 20) {
+            nav.classList.remove('navbar-light');
+            nav.classList.add('nav-scroll', 'navbar-dark');
+        } else if (window.scrollY < 20) {
+            nav.classList.remove('nav-scroll', 'navbar-dark');
+            nav.classList.add('navbar-light');
+
+        }
+    });
+</script>
+{% endblock %}
