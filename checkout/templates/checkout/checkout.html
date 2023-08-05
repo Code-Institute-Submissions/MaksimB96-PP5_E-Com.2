@@ -16,6 +16,55 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-12 col-lg-6 order-lg-last mb-2">
+            <div class="row">
+                <div class="col-7 offset-2">
+                    <p class="mb-2 mt-1 small text-muted body-text">
+                        Item
+                    </p>
+                </div>
+                <div class="col-7 text-right">
+                    <p class="mb-2 mt-1 small text-muted body-text">
+                        Total
+                    </p>
+                </div>
+            </div>
+            {% for itm in bag_items %}
+            <div class="row">
+                <div class="col-2 mb-2">
+                    <a href="{% url 'product_detail' item.product.id %}">
+                        {% if item.product.image %}
+                            <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="w-100">
+                        {% else %}
+                            <img src="{{ MEDIA_URL }}no-img.png" alt="{{ product.name }}" class="w-100">
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="col-7">
+                    <p class="my-0 body-text">{{ item.product.name }}</p>
+                    <p class="my-0 body-text small"> Size: {% if product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                    <p class="my-0 body-text small text-muted"> Qty: {{ item.quantity }}</p>
+                </div>
+                <!-- bag tools for calc calc_subtotal:item.quantity -->
+                <div class="col-3 text-right">
+                    <p class="small body-text text-muted">€{{ item.product.price}}</p>
+                </div>
+            </div>
+            {% endfor %}
+            <hr>
+            <div class="row text-right body-text">
+                <div class="col-7 offset-2">
+                    <p class="my-1">Order Total:</p>
+                    <p class="my-1">Delivery:</p>
+                    <p class="my-1">Grand Total:</p>
+                </div>
+                <div class="col-3">
+                    <p class="my-1">€{{ total | floatformat:2 }</p>
+                    <p class="my-1">€{{ delivery | floatformat:2 }}</p>
+                    <p class="my-1"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
+                </div>
+            </div>
+        </div>
         <div class="col-12 col-lg-6">
             <p class="body-text text-muted">
                 Please Complete the form before purchase!
