@@ -29,7 +29,7 @@
                     </p>
                 </div>
             </div>
-            {% for itm in bag_items %}
+            {% for item in bag_items %}
             <div class="row">
                 <div class="col-2 mb-2">
                     <a href="{% url 'product_detail' item.product.id %}">
@@ -59,7 +59,7 @@
                     <p class="my-1">Grand Total:</p>
                 </div>
                 <div class="col-3">
-                    <p class="my-1">€{{ total | floatformat:2 }</p>
+                    <p class="my-1">€{{ total | floatformat:2 }}</p>
                     <p class="my-1">€{{ delivery | floatformat:2 }}</p>
                     <p class="my-1"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
