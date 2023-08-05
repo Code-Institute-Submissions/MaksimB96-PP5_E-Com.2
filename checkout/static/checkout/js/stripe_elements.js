@@ -43,17 +43,24 @@ card.addEventListener('change', function (event){
 
 // Create a token or display an error when the form is submitted.
 const form = document.getElementById('payment-form');
-form.addEventListener('submit', async (event) => {
+
+form.addEventListener('submit', function(event){
   event.preventDefault();
 
-  const {token, error} = await stripe.createToken(card);
+  stripe.confirmCardPayment(client_secret, {
+    payment_method: {
+        card: card,
+        billing_details: {
+            name: ''
+        }
+    }
+  }).then(function(result){
+    if (result.error) {
+        console.log(result.error.message);
+    } else {
+        if (result.paymentIntent.status === 'succeded') {
 
-  if (error) {
-    // Inform the customer that there was an error.
-    const errorElement = document.getElementById('card-errors');
-    errorElement.textContent = error.message;
-  } else {
-    // Send the token to your server.
-    stripeTokenHandler(token);
-  }
+        }
+    }
+  });
 });
