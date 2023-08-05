@@ -22,3 +22,38 @@ var style = {
     }
 };
 card.mount('#card-element');
+
+// Validation handleing
+card.addEventListener('change', function (event){
+    var errorDiv = document.getElementById('card-errors');
+    if(event.error){
+        var html = `
+        <span role="alert">
+            <i class="fas fa-times"></i>
+        </span>
+        <span>${event.error.message}</span>`
+
+        $(errorDiv).html(html);
+    } else {
+        errorDiv.textContent = '';
+    }
+});
+
+//Accepting a payment sourced form stripe official docs
+
+// Create a token or display an error when the form is submitted.
+const form = document.getElementById('payment-form');
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const {token, error} = await stripe.createToken(card);
+
+  if (error) {
+    // Inform the customer that there was an error.
+    const errorElement = document.getElementById('card-errors');
+    errorElement.textContent = error.message;
+  } else {
+    // Send the token to your server.
+    stripeTokenHandler(token);
+  }
+});
