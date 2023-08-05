@@ -81,5 +81,6 @@ form.addEventListener('submit', function (ev) {
 //     errorElement.textContent = error.message;
 //   } else {
 //     // Send the token to your server.
-//     stripeTokenHandler(token);
+//     stripeTokenHandler(token); v 
+
 //   }
