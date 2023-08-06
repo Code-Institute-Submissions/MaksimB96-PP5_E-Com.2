@@ -30,17 +30,16 @@ def checkout(request):
         }
 
         order_form = OrderForm(form_data)
-
         if order_form.is_valid():
             order = order_form.save()
             for item_id, item_data in bag.items():
                 try:
-                    product = Product.objects.get(id=item_data)
+                    product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
-                            quantity=quantity,
+                            quantity=item_data,
                         )
                         order_line_item.save()
                     else:
