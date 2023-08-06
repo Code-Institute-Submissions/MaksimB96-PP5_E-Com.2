@@ -99,8 +99,12 @@
                 </fieldset>
                 <fieldset class="rounded mx-3">
                     <legend class="fieldset-label body-text small px-2 w-auto">Payment</legend>
+                    <!-- Stripe Elements -->
                     <div class="mb-3" id="card-element"></div>
-                    <div class="mb-3" id="card-errors" role="alert"></div>
+                    <!-- Stripe Error msg container -->
+                    <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                    <!-- payment intent via passed client SK -->
+                    <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
                 <div class="submit-button text-right">
