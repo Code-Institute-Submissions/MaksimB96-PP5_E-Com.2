@@ -88,6 +88,7 @@
                     </div>
                 </div>
 
+                {% if order.street_address2 %}
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="body-text">Street Address 2:</p>
@@ -96,6 +97,7 @@
                         <p class="body-text">{{ order.street_address2 }}</p>
                     </div>
                 </div>
+                {% endif %}
 
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -115,6 +117,7 @@
                     </div>
                 </div>
 
+                {% if post_code %}
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="body-text">Eircode:</p>
@@ -123,6 +126,7 @@
                         <p class="body-text">{{ order.postalcode }}</p>
                     </div>
                 </div>
+                {% endif %}
 
                 <div class="row">
                     <div class="col-12 col-md-4">
