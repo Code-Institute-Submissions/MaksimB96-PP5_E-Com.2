@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/profiles/css/profile.css' %}">
+{% endblock%}
+
+{% block content %}
+<div class="nav-calc"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="head-text mb-2">My Profile</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    const nav = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 20) {
+            nav.classList.remove('navbar-light');
+            nav.classList.add('nav-scroll', 'navbar-dark');
+        } else if (window.scrollY < 20) {
+            nav.classList.remove('nav-scroll', 'navbar-dark');
+            nav.classList.add('navbar-light');
+
+        }
+    });
+</script>
+{% endblock %}
