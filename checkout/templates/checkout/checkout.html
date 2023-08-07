@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static '/checkout/css/checkout.css' %}">
-{% endblock%}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
 
 {% block content %}
 <div class="nav-calc"></div>
@@ -42,12 +43,12 @@
                 </div>
                 <div class="col-7">
                     <p class="my-0 body-text">{{ item.product.name }}</p>
-                    <p class="my-0 body-text small"> Size: {% if product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                    <p class="my-0 body-text small"> Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                     <p class="my-0 body-text small text-muted"> Qty: {{ item.quantity }}</p>
                 </div>
                 <!-- bag tools for calc calc_subtotal:item.quantity -->
                 <div class="col-3 text-right">
-                    <p class="small body-text text-muted">€{{ item.product.price}}</p>
+                    <p class="small body-text text-muted">€{{ item.product.price }}</p>
                 </div>
             </div>
             {% endfor %}
@@ -143,22 +144,22 @@
 {% endblock %}
 
 {% block postloadjs %}
-{{ block.super }}
-{{ stripe_public_key|json_script:"id_stripe_public_key" }}
-{{ client_secret|json_script:"id_client_secret" }}
-<script type="text/javascript" src="{% static 'checkout/js/stripe_elements.js' %}"></script>
-<script type="text/javascript">
-    const nav = document.querySelector('.navbar');
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script type="text/javascript" src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+    <script type="text/javascript">
+        const nav = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY >= 20) {
-            nav.classList.remove('navbar-light');
-            nav.classList.add('nav-scroll', 'navbar-dark');
-        } else if (window.scrollY < 20) {
-            nav.classList.remove('nav-scroll', 'navbar-dark');
-            nav.classList.add('navbar-light');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 20) {
+                nav.classList.remove('navbar-light');
+                nav.classList.add('nav-scroll', 'navbar-dark');
+            } else if (window.scrollY < 20) {
+                nav.classList.remove('nav-scroll', 'navbar-dark');
+                nav.classList.add('navbar-light');
 
-        }
-    });
-</script>
+            }
+        });
+    </script>
 {% endblock %}

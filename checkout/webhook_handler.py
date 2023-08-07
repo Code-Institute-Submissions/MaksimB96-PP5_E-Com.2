@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
+from django.conf import settings
 
 import json
 import time
@@ -44,8 +45,8 @@ class StripeWH_Handler:
         profile = None
         username = intent.metadata.username
         if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
             if save_info:
-                profile = UserProfile.objects.get(user__username=username)
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
                 profile.default_postcode = shipping_details.address.postal_code
@@ -55,7 +56,7 @@ class StripeWH_Handler:
                 profile.default_county = shipping_details.address.state
                 profile.save()
 
-        order_exists = Fals
+        order_exists = False
         attempt = 1
         while attempt <= 5:
             try:
@@ -136,5 +137,6 @@ class StripeWH_Handler:
             content=f'Webhook obtained: {event["type"]}',
             status=200
         )
+       
 
 

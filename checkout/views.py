@@ -76,7 +76,8 @@ def checkout(request):
                             quantity=quantity,
                             product_size=size,
                         )
-                        order_line_item.save()
+                            order_line_item.save()
+
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "An item in your bag does not exist!")
@@ -113,6 +114,7 @@ def checkout(request):
                     'phone_number': profile.default_phone_number,
                     'country': profile.default_country,
                     'postcode': profile.default_postcode,
+                    'town_or_city': profile.default_town_or_city,
                     'street_address1': profile.default_street_address1,
                     'street_address2': profile.default_street_address2,
                     'county': profile.default_county,
@@ -145,19 +147,19 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
-    if save_info:
-        profile_data = {
-            'default_phone_number': order.phone_number,
-            'default_country': order.country,
-            'default_postcode': order.postcode,
-            'default_town_or_city': order.town_or_city,
-            'default_street_address1': order.street_address1,
-            'default_street_address2': order.street_address2,
-            'default_county': order.county,
-        }
-        user_profile_form = UserProfileForm(profile_data, instance=profile)
-        if user_profile_form.is_valid():
-            user_profile_form.save()
+        if save_info:
+            profile_data = {
+                'default_phone_number': order.phone_number,
+                'default_country': order.country,
+                'default_postcode': order.postcode,
+                'default_town_or_city': order.town_or_city,
+                'default_street_address1': order.street_address1,
+                'default_street_address2': order.street_address2,
+                'default_county': order.county,
+            }
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
 
     messages.success(request, f'Thank you for your order \
     your order number is {order_number}, order confirmation will be sent to\
