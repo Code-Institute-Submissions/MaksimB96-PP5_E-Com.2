@@ -4,10 +4,11 @@
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block content %}
-<h1 class="nav-calc">{% trans "Sign Out" %}</h1>
+{% block inner_content %}
+<h2 class="nav-calc head-text mb-2">{% trans "Sign Out" %}}</h2>
+<hr>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<p class="body-text">{% trans 'Are you sure you want to sign out?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
