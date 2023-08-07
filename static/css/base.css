@@ -254,3 +254,23 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+/* ------------------------------------Allauth styling */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: #6c757d;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input {
+    border-color: var(--theme2);
+    border-radius: 0;
+}
+
+.allauth-form-inner-content input::placeholder {
+    font-family: 'Lato',sans-serif;
+    color: #aab7c4;
+}

@@ -74,34 +74,43 @@
                     <a class="nav-link body-text" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Categories
                     </a>
                     <div class="dropdown-menu bg-dark border-0 body-text" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=honey">Honey</a>
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=apparel">Clothing</a>
-                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=bee_gear">Beekeeper Gear</a>
+                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=bee_gear">Beekeeper
+                            Gear</a>
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=bees_wax">Bee-Wax</a>
-                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=accessories">Accessories</a>
+                        <a class="dropdown-item text-white "
+                            href="{% url 'products' %}?category=accessories">Accessories</a>
                         <hr class="w-100 bg-light">
-                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
-                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
-                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=category&direction=asc">By Category</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=rating&direction=desc">By
+                            Rating</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=price&direction=asc">By
+                            Price</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=category&direction=asc">By
+                            Category</a>
                         <a class="dropdown-item text-white" href="{% url 'products' %}">All Items</a>
                     </div>
                 </li>
-                {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Manage Products
                     </a>
-                {% endif %}
                     <div class="dropdown-menu body-text border-0" aria-labelledby="navbarDropdownMenuLink2">
                         <a href="" class="dropdown-item text-white">My Orders</a>
                     </div>
+                </li>
+                {% endif %}
+
+                {% if request.user.is_authenticated %}
+                <li class="nav-item">
+                    <a href="{% url 'profile' %}" class="nav-link">My Orders</a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
@@ -115,7 +124,8 @@
                 </li>
                 {% endif %}
                 <li class="nav-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        href="{% url 'view_bag' %}">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                         </div>
@@ -160,7 +170,8 @@
                                 Contact
                             </h2>
                             <ul class="list-unstyled">
-                                <li class="body-text my-2"><i class="fa-solid fa-square-envelope"></i> example@email.com</li>
+                                <li class="body-text my-2"><i class="fa-solid fa-square-envelope"></i> example@email.com
+                                </li>
                                 <li class="body-text my-2"><i class="fa-solid fa-square-phone"></i> 086-123-1234</li>
                             </ul>
                         </div>
@@ -169,11 +180,16 @@
                                 Products
                             </h2>
                             <ul class="list-unstyled">
-                                <li><a href="{% url 'products' %}?category=honey" class="py-1 d-block body-text">Honey</a></li>
-                                <li><a href="{% url 'products' %}?category=bees_wax" class="py-1 d-block body-text">Bee-Wax</a></li>
-                                <li><a href="{% url 'products' %}?category=bee_gear" class="py-1 d-block body-text">Beekeeper Gear</a></li>
-                                <li><a href="{% url 'products' %}?category=accessories" class="py-1 d-block body-text">Accessories</a></li>
-                                <li><a href="{% url 'products' %}?category=apparel" class="py-1 d-block body-text">Apparel</a></li>
+                                <li><a href="{% url 'products' %}?category=honey"
+                                        class="py-1 d-block body-text">Honey</a></li>
+                                <li><a href="{% url 'products' %}?category=bees_wax"
+                                        class="py-1 d-block body-text">Bee-Wax</a></li>
+                                <li><a href="{% url 'products' %}?category=bee_gear"
+                                        class="py-1 d-block body-text">Beekeeper Gear</a></li>
+                                <li><a href="{% url 'products' %}?category=accessories"
+                                        class="py-1 d-block body-text">Accessories</a></li>
+                                <li><a href="{% url 'products' %}?category=apparel"
+                                        class="py-1 d-block body-text">Apparel</a></li>
                             </ul>
                         </div>
                     </div>
@@ -184,11 +200,11 @@
                             <h2 class="footer-head head-text text-white pb-2">
                                 Follow Our Socials!
                             </h2>
-                            
+
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-facebook"></i></a>
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-instagram"></i></a>
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-twitter"></i></a>
-                            
+
                             <h2 class="footer-head head-text text-white pt-4">Subscribe to Our Letter!</h2>
                             <form action="#" class="subscribe-footer">
                                 <div class="form-group d-flex">
