@@ -19,13 +19,15 @@ def webhook(request):
 
     try:
         event = stripe.Webhook.construct_event(
-        payload, sig_header, wh_secret
+            payload, sig_header, wh_secret
         )
     except ValueError as e:
         # Invalid payload
         return HttpResponse(status=400)
     except stripe.error.SignatureVerificationError as e:
         # Invalid signature
+        print('Signature error: ', e)
+
         return HttpResponse(status=400)
     except Exception as e:
         return HttpResponse(content=e, status=400)
