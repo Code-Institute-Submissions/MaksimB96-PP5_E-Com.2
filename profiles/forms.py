@@ -9,7 +9,7 @@ class UserProfileForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
 
-        super().__init__(*args, *kwargs)
+        super().__init__(*args, **kwargs)
         placeholders = {
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
