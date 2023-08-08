@@ -23,7 +23,7 @@
                     {% if item.product.image %}
                     <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="w-100">
                     {% else %}
-                    <img src="{{ MEDIA_URL }}no-img.png" alt="product_image" class="w-100" alt="{{ item.product.name }}">
+                    <img src="{{ MEDIA_URL }}no-img.png" alt="{{ item.product.name }}" class="w-100" alt="{{ item.product.name }}">
                     {% endif %}
                 </div>
                 <div class="col-9 my-2">
