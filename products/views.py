@@ -75,12 +75,14 @@ def add_product(request):
     "Allows super user to add products to the store"
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
+
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, "Product has been generated!")
-            return redirect(reverse('add_product'))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, "Whoops! There seems to be an error in your form.")
+            
     else:
         form = ProductForm()
 
@@ -114,3 +116,12 @@ def edit_product(request):
         'product': product,
     }
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """Allows super user to delete products from store"""
+
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product has been removed from store!')
+    return redirect(reverse('products'))
