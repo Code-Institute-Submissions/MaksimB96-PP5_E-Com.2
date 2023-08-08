@@ -1,0 +1,18 @@
+Hello {{ order.full_name }}
+
+This is a confirmation form Honey Haven! Please find your details attached below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+Order Total: {{ order.order_total }}
+
+Delivery: {{ order.delivery_cost }}
+Grand Total: {{ order.grand_total }}
+
+Your order will be sent to {{ order.street_address1 }}, {{ order.town_or_city }}, {{ order.country }}.
+
+If you have any further requests or questions please contact us at {{ contact_email }}!
+
+Kind Regards,
+
+Honey Haven
