@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="nav-calc"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="head-text mb-2">Product Management</h2>
+            <h4 class="body-text text-muted">Add Products</h4>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+       <div class="col-12 col-md-6">
+        <form action="{% url 'add_product' %}" method="POST" class="form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <div class="text-right">
+                <a href="{% url 'products' %}" class="btn rounded-0">Cancel</a>
+                <button class="btn rounded-0" type="Submit">
+                    Add Product
+                </button>
+            </div>
+        </form>
+
+       </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        const nav = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 20) {
+                nav.classList.remove('navbar-light');
+                nav.classList.add('nav-scroll', 'navbar-dark');
+            } else if (window.scrollY < 20) {
+                nav.classList.remove('nav-scroll', 'navbar-dark');
+                nav.classList.add('navbar-light');
+
+            }
+        });
+    </script>
+{% endblock %}
