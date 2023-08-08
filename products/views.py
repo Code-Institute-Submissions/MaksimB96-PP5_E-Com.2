@@ -101,7 +101,7 @@ def add_product(request):
 
 
 @login_required
-def edit_product(request):
+def edit_product(request, product_id):
     "Allows super user to edit products in the store"
 
     if not request.user.is_superuser:
