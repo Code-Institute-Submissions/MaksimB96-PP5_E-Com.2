@@ -285,6 +285,19 @@ body {
     /* margin-top: 111px; */
 }
 
+/* ------------------------------------Buttons*/
+
+.btn:hover {
+    color: var(--theme1) !important;
+    background: var(--theme2);
+}
+
+.decrement-qty,
+.increment-qty {
+    color: var(--theme3);
+    background: var(--theme2);
+}
+
 /* ------------------------------------Product styling */
 
 .bag-wrapper {
@@ -364,5 +377,10 @@ body {
 
     .mobile-tab-width{
         width: 100% !important;
+    }
+
+    .messages-container {
+        right: 18px;
+        left: 18px;
     }
 }
