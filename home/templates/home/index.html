@@ -60,7 +60,7 @@
                     Anything honey related we've got it!
                 </p>
                 <h3 class="pb-3">
-                    <a href="{% url 'products' %}" class="btn btn-lg shop-now-btn body-text rounded-0">Shop Now!</a>
+                    <a href="{% url 'products' %}" class="btn btn-lg btn-gold-blk head-text rounded-0">Shop Now!</a>
                 </h3>
             </div>
         </div>
@@ -171,17 +171,43 @@
 
 {% block postloadjs %}
 <script>
+
     const nav = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 20) {
+        if (window.scrollY >= 1) {
             nav.classList.remove('navbar-light');
             nav.classList.add('nav-scroll', 'navbar-dark');
-        } else if (window.scrollY < 20) {
+        } else if (window.scrollY < 1) {
             nav.classList.remove('nav-scroll', 'navbar-dark');
             nav.classList.add('navbar-light');
 
         }
     });
+
+
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var submitIcon = $('.searchbar-icon');
+        var inputArea = $('.searchbar-input');
+        var searchBar = $('.searchbar');
+        var isExpanded = false;
+
+        submitIcon.click(function () {
+            if (isExpanded == false) {
+                searchBar.addClass('searchbar-open');
+                inputArea.focus();
+                isExpanded = true;
+            } else {
+                searchBar.removeClass('searchbar-open');
+                inputArea.focusout();
+                isExpanded = false;
+            }
+        });
+
+
+    })
 </script>
 {% endblock %}

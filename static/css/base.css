@@ -210,13 +210,6 @@ body {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-
-
-.shop-now-btn {
-    background: var(--theme2);
-    color: var(--theme1);
-}
-
 #sec-a i {
     font-size: 30px;
 }
@@ -299,6 +292,15 @@ body {
 }
 
 /* ------------------------------------Buttons and Inputs*/
+.shop-now-btn {
+    background: var(--theme2);
+    color: var(--theme1);
+}
+
+.shop-now-btn:hover{
+    background: white;
+    color: #000;
+}
 
 .btn:hover {
     color: var(--theme1) !important;
@@ -377,12 +379,9 @@ body {
         font-size: 20px;
     }
 
-    nav {
-        background: #000;
-    }
-
-    nav .navbar-brand, .nav-link{
-        color: var(--theme1) !important;
+    .sb-cont{
+        padding-top: 0.5em;
+        margin-right: 0;
     }
 
     .product-detail-wrapper {

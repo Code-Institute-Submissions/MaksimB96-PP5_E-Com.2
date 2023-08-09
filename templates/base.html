@@ -55,7 +55,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-3 pb-3 w-100">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-2">
         <a class="navbar-brand" href="{% url 'home' %}">Honey Haven</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <div class="container">
+                <div class="container sb-cont">
                     <form class="form-inline searchbar ml-auto" method="GET" action="{% url 'products' %}">
                         <input type="search" placeholder="Search Items" name="q" class="searchbar-input" required>
                         <input type="submit" class="searchbar-submit" value="GO">
@@ -78,7 +78,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Categories
                     </a>
-                    <div class="dropdown-menu bg-dark border-0 body-text" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu bg-dark border-0 body-text w-50" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=honey">Honey</a>
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=apparel">Clothing</a>
                         <a class="dropdown-item text-white " href="{% url 'products' %}?category=bee_gear">Beekeeper
