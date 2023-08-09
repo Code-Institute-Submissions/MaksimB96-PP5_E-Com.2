@@ -308,6 +308,7 @@ a.category-badge > span.badge:hover {
 .allauth-form-inner-content input {
     border-color: var(--theme2);
     border-radius: 0;
+    font-family: 'Lato',sans-serif;
 }
 
 .allauth-form-inner-content input::placeholder {
@@ -315,10 +316,29 @@ a.category-badge > span.badge:hover {
     color: #aab7c4;
 }
 
+.login-detail-wrapper{
+    height: 100vh;
+}
+
 /* ------------------------------------Media Queries*/
 
-@media (min-width: 992px){
-   .toh-text-block{
-    overflow-x: hidden;
-   }
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .product-detail-wrapper {
+        height: 100vh;
+    }
+    
+    .login-detail-wrapper {
+        height: 100vh;
+        width: 100vw;
+        /* margin-top: 111px; */
+        text-align: center;
+    }
+
+    .mobile-tab-width{
+        width: 100% !important;
+    }
 }
