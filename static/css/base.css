@@ -241,6 +241,21 @@ body {
     background: var(--grey);
 }
 
+.card-animation:hover{
+    animation-name: card-zoom;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes card-zoom {
+    from{
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
 /* ------------------------------------Products-styling */
 a.category-badge > span.badge:hover {
     background: var(--theme2) !important;
