@@ -300,3 +300,10 @@ a.category-badge > span.badge:hover {
     color: #aab7c4;
 }
 
+/* ------------------------------------Media Queries*/
+
+@media (min-width: 992px){
+   .toh-text-block{
+    overflow-x: hidden;
+   }
+}
