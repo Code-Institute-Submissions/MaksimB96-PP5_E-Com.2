@@ -199,7 +199,18 @@ body {
     margin-bottom: 0;
 
     height: 100vh;
+
+    display: flex;
+    align-items: center;
 }
+
+
+.cta-text {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
 
 .shop-now-btn {
     background: var(--theme2);
@@ -227,10 +238,6 @@ body {
 }
 
 .toh-text {
-    background: var(--grey);
-}
-
-#sec-d {
     background: var(--grey);
 }
 
