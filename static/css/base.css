@@ -27,14 +27,20 @@
         sans-serif;;
 }
 
-.nav-calc {
-    margin-top: 111px;
+/* .nav-calc {
+    margin-top: 111px; 
+    height: 100vh;
+}  */
+
+.btn-gold-blk {
+    background: var(--theme3);
+    color: #000;
 }
 
-.order-confirm-right {
-    font-weight: 500;
+.btn-blk-gold{
+    background: var(--theme2);
+    color: var(--theme3);
 }
-
 /* ------------------------------------Base-styling */
 body {
     overflow-x: hidden;
@@ -248,6 +254,11 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+.product-detail-wrapper {
+    height: 100vh;
+    /* margin-top: 111px; */
 }
 
 /* ------------------------------------Product styling */
