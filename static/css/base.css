@@ -31,6 +31,10 @@
     margin-top: 111px;
 }
 
+.order-confirm-right {
+    font-weight: 500;
+}
+
 /* ------------------------------------Base-styling */
 body {
     overflow-x: hidden;
