@@ -5,7 +5,7 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block inner_content %}
-<h2 class="nav-calc head-text mb-2">{% trans "Sign Out" %}}</h2>
+<!-- <h2 class="nav-calc head-text mb-2">{% trans "Sign Out" %}</h2>
 <hr>
 
 <p class="body-text">{% trans 'Are you sure you want to sign out?' %}</p>
@@ -16,7 +16,55 @@
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
   <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+</form> -->
+
+<div class="login-detail-wrapper d-flex align-items-center justify-content-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+
+        <hr class="w-50">
+        <h2 class="head-text mb-2">{% trans "Sign Out" %}</h2>
+        <hr class="w-50">
+
+        <p class="body-text">{% trans 'Are you sure you want to sign out?' %}</p>
+
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <button type="submit" class="btn btn-gold-blk rounded-0 head-text">{% trans 'Sign Out' %}</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {% endblock %}
+
+<div class="login-detail-wrapper d-flex align-items-center justify-content-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+
+        <hr class="w-50">
+        <h2 class="head-text mb-2">{% trans "Sign Out" %}</h2>
+        <hr class="w-50">
+
+        <p class="body-text">{% trans 'Are you sure you want to sign out?' %}</p>
+
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <button type="submit">{% trans 'Sign Out' %}</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
