@@ -18,13 +18,13 @@
     
                 <div class="table-responsive rounded-0">
                     <table class="table table-sm table-borderless">
-                        <thead class="body-text">
-                            <tr>
-                                <th scope="col body-text">Order Info</th>
-                                <th scope="col body-text"></th>
-                                <th scope="col body-text">Price</th>
-                                <th scope="col body-text">Qty</th>
-                                <th scope="col body-text">Subtotal</th>
+                        <thead>
+                            <tr class="head-text">
+                                <th scope="col">Order Info</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Subtotal</th>
                             </tr>
     
                             {% for item in bag_items %}
@@ -89,10 +89,10 @@
                             </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right">
-                                    <h6 class="body-text"><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                                    <h6 class="body-text">Delivery: €{{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                                <td colspan="5" class="pt-5 text-right body-text">
+                                    <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                                    <h4><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0%}
                                     <p class="mb-1 text-danger">
                                         Free delivery is just <strong>€{{ free_delivery_delta }}</strong> away!
@@ -101,15 +101,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-lg rounded-0">
+                                <td colspan="5" class="text-right head-text">
+                                    <a href="{% url 'products' %}" class="btn btn-lg btn-gold-blk rounded-0">
                                         <span>
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="body-text">Continue Shopping</span>
+                                        <span>Continue Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-lg rounded-0">
-                                        <span class="body-text">Secure Checkout</span>
+                                    <a href="{% url 'checkout' %}" class="btn btn-lg btn-blk-gold rounded-0">
+                                        <span>Secure Checkout</span>
                                         <span>
                                             <i class="fas fa-lock"></i>
                                         </span>
@@ -120,13 +120,13 @@
                     </table>
                 </div>
                 {% else %}
-                <p class="lead mb-5 body-text">
+                <p class="lead mb-5 head-text">
                     Bag is empty!
-                    <a href="{% url 'products' %}" class="btn btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-lg btn-gold-blk rounded-0 ml-2">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="body-text">Keep Shopping</span>
+                        <span>Keep Shopping</span>
                     </a>
                 </p>
                 {% endif %}

@@ -10,25 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<section>
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container y-axis-align">
-            <div class="row">
-                <div class="col-7 col-md-6 my-auto hero-text">
-                    <h1 class="display-4 head-text">
-                        Got Honey?
-                    </h1>
-                    <div class="my-5">
-                        <h4>
-                            <a href="{% url 'products' %}" class="btn btn-lg shop-now-btn body-text rounded-0">Get
-                                Yours!</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+<section class="hero">
+    
 </section>
 
 <section id="sec-a" class="bg-dark">
@@ -56,12 +39,12 @@
 </section>
 
 <section id="sec-b">
-    <div class="container-fluid m-0 p-0">
+    <div class="container-fluid">
         <div class="row toh-text">
-            <div class="col-md-6">
+            <div class="col-md-6 m-0 p-0 d-none d-lg-block">
                 <img src="/media/honey-haven-products.jpg" class="img-fluid w-100">
             </div>
-            <div class="col-md-6 text-center w-100 my-auto">
+            <div class="col-md-6 text-center w-auto my-auto">
                 <h2 class="head-text py-3 text-light font-italic">
                     "A Taste of Haven..."
                 </h2>
@@ -117,7 +100,7 @@
                 </a>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 d-none d-lg-block">
                 <img src="/media/honey-harvest.jpg" alt="honey-harvest" class="img-fluid">
             </div>
         </div>

@@ -191,18 +191,14 @@ body {
 }
 
 /* ------------------------------------Index-styling */
-.jumbotron {
-    height: 100vh;
+.hero{
     background-image: url('/media/honey-bee.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
-}
 
-
-.y-axis-align {
-    padding-top: 10%;
+    height: 100vh;
 }
 
 .shop-now-btn {
@@ -271,10 +267,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* .btt-link {
-    cursor: pointer;
-} */
-
 .product-wrapper{
     height: 100%;
     margin-top: 111px;
@@ -282,10 +274,9 @@ body {
 
 .product-detail-wrapper {
     height: 100vh;
-    /* margin-top: 111px; */
 }
 
-/* ------------------------------------Buttons*/
+/* ------------------------------------Buttons and Inputs*/
 
 .btn:hover {
     color: var(--theme1) !important;
@@ -296,14 +287,6 @@ body {
 .increment-qty {
     color: var(--theme3);
     background: var(--theme2);
-}
-
-/* ------------------------------------Product styling */
-
-.bag-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .btn-file {
@@ -319,6 +302,14 @@ body {
     min-height: 100%;
     opacity: 0;
     cursor: pointer;
+}
+
+/* ------------------------------------Product styling */
+
+.bag-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .custom-checkbox .custom-control-label::before{
@@ -362,6 +353,14 @@ body {
 @media only screen and (min-width:320px) and (max-width:768px) {
     .navbar-brand {
         font-size: 20px;
+    }
+
+    nav {
+        background: #000;
+    }
+
+    nav .navbar-brand, .nav-link{
+        color: var(--theme1) !important;
     }
 
     .product-detail-wrapper {
