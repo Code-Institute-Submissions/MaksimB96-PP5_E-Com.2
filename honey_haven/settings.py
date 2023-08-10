@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'crispy_forms',
-    'storages'
+    'storages',
 
     # Project Apps
     'home',
@@ -203,7 +203,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 # AWS set up
 
 if 'USE_AWS' in os.environ:
-    AWS_STORAGE_BUCKET_NAME = 'honeyhaven'
+    AWS_STORAGE_BUCKET_NAME = 'maksimb96-honeyhaven'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
