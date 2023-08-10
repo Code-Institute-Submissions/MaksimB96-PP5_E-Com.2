@@ -58,5 +58,12 @@
 
             }
         });
+
+        document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        if(this.getAttribute('aria-expanded')) {
+            nav.classList.remove('navbar-light');
+            nav.classList.add('nav-scroll', 'navbar-dark');
+        } 
+    });
     </script>
 {% endblock %}
