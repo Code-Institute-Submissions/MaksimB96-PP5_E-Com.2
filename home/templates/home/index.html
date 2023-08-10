@@ -114,26 +114,27 @@
     </div>
 </section>
 
-<section id="sec-d mb-3">
-    <div class="container-fluid m-0 p-0">
+<section id="sec-d">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 text-center my-5">
+            <div class="col-md-12 text-center my-5 mx-0">
                 <h1 class="head-text">
                     Browse Our Honey
                 </h1>
+                <hr class="w-50">
             </div>
             {% for product in products %}
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card  card-animation h-100 border-0 text-center">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 p-2 mx-0">
+                <div class="card card-animation border-0 text-center">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid"
-                            style="height: 200px; width: 200px;">
+                            style="height: 150px; width: 150px;">
                     </a>
                     {% else %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img src="{{ MEDIA_URL }}no-img.png" alt="{{ product.name }}"
-                            style="height: 380px; width: 380px;">
+                        style="height: 150px; width: 150px;">
                     </a>
                     {% endif %}
                     <div class="card-body head-text pb-0">
@@ -173,7 +174,7 @@
 <script>
 
     const nav = document.querySelector('.navbar');
-
+    
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 1) {
             nav.classList.remove('navbar-light');
@@ -185,7 +186,18 @@
         }
     });
 
+    var docWidth = document.documentElement.offsetWidth;
 
+    [].forEach.call(
+    document.querySelectorAll('*'),
+    function(el) {
+        if (el.offsetWidth > docWidth) {
+        console.log(el);
+        }
+    }
+    );
+
+    
 
 </script>
 <script type="text/javascript">
