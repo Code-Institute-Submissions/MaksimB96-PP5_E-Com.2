@@ -286,10 +286,10 @@ body {
     scroll-behavior: smooth;
 }
 
-.product-wrapper{
+/* .product-wrapper{
     height: 100%;
     margin-top: 111px;
-}
+} */
 
 .product-detail-wrapper {
     height: 100vh;
@@ -390,6 +390,7 @@ body {
 
     .product-detail-wrapper {
         height: 100vh;
+        margin-top: 60px;
     }
     
     .login-detail-wrapper {
