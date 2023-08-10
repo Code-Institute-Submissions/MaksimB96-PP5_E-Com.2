@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="login-detail-wrapper d-flex align-items-center justify-content-center">
-    <div class="container mb-2">
+
+<div class="container mb-2">
         <div class="row">
             <div class="col">
                 <hr>
@@ -131,16 +131,16 @@
                 </form>
             </div>
         </div>
-    </div>
-
-    <div id="loading-screen">
-        <h1 class="text-light loading-spin">
-            <span>
-                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
-            </span>
-        </h1>
-    </div>
 </div>
+
+<div id="loading-screen">
+    <h1 class="text-light loading-spin">
+        <span>
+            <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+        </span>
+    </h1>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}
