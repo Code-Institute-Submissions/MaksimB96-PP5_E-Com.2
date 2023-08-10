@@ -223,6 +223,10 @@
     height: 400px;
 }
 
+#sec-e {
+    background: var(--grey);
+}
+
 .product-image {
     background-image: url('/media/honey-haven-products.jpg');
     background-position: center;
