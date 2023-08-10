@@ -1,0 +1,1 @@
+web: gunicorn honey_haven.wsgi:application

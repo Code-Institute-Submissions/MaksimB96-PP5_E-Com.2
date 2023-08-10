@@ -124,7 +124,7 @@
                 </li>
                 {% endif %}
                 <li class="nav-item">
-                    <a class="{% if grand_total %} font-weight-bold{% else %}text-black{% endif %} nav-link"
+                    <a class="{% if grand_total %}text-warning{% else %}text-black{% endif %} nav-link"
                         href="{% url 'view_bag' %}">
                         <div>
                             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
