@@ -102,7 +102,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Manage
                     </a>
-                    <div class="dropdown-menu body-text border-0" aria-labelledby="navbarDropdownMenuLink2">
+                    <div class="dropdown-menu body-text border-0 bg-dark text-white" aria-labelledby="navbarDropdownMenuLink2">
                         <a href="{% url 'add_product' %}" class="dropdown-item text-white">Products</a>
                     </div>
                 </li>
@@ -206,7 +206,8 @@
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-twitter"></i></a>
 
                             <h2 class="footer-head head-text text-white pt-4">Subscribe to Our Letter!</h2>
-                            <form action="#" class="subscribe-footer">
+                            <form action="{% url 'home' %}" method="POST" class="subscribe-footer">
+                                {% csrf_token %}
                                 <div class="form-group d-flex">
                                     <input type="email" class="form-control" placeholder="Enter your e-mail here">
                                     <input type="submit" value="Subscribe" class="form-control footer-submit">
