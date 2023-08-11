@@ -27,10 +27,6 @@
         sans-serif;;
 }
 
-.nav-calc {
-    margin-top: 111px; 
-} 
-
 .btn-gold-blk {
     background: var(--theme3);
     color: #000;
@@ -135,6 +131,10 @@
     height: 2px;
 }
 
+
+.nav-calc{
+    margin-top: 100px;
+}
 /* ------------------------------------Footer-styling */
 
 .footer-head {
@@ -385,7 +385,7 @@ body {
     }
 
     .nav-calc{
-        margin-top: 80px;
+        margin-top: 70px;
     }
 
     .sb-cont{
