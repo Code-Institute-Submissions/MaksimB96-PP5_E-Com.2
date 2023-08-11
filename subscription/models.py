@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Subscribers(models.Models):
+class Subscribers(models.Model):
     email = models.EmailField(null=True)
     date = models.DateTimeField(auto_now_add=True)
 
@@ -10,7 +10,7 @@ class Subscribers(models.Models):
 
 
 class NewsLetter(models.Model):
-    title = models.CharFeild(max_length=100, null=True)
+    title = models.CharField(max_length=100, null=True)
     news_body = models.TextField(null=True)
 
     def __str__(self):
