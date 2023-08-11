@@ -2,7 +2,23 @@
 {% load static %}
 
 {% block content %}
+
 <div class="login-detail-wrapper d-flex align-items-center justify-content-center">
-    hello world
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card rounded-0">
+                    <div class="card-body text-center mb-3">
+                        <form action="" method="POST" class="head-text">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <input type="submit" class="btn btn-gold-blk head-text rounded-0 mt-3" value="Send Newsletter">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 {% endblock %}

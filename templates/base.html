@@ -207,7 +207,7 @@
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-twitter"></i></a>
 
                             <h2 class="footer-head head-text text-white pt-4">Subscribe to Our Letter!</h2>
-                            <form action="{% url 'home' %}" method="POST" class="subscribe-footer">
+                            <form action="" method="POST" class="subscribe-footer">
                                 {% csrf_token %}
                                
                                 {{ form|crispy }}
