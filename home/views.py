@@ -12,14 +12,14 @@ def index(request):
     """Main index page render and handles News Letter Subscribers"""
     products = Product.objects.filter(category__name='honey')
     form = SubscribeForm()
-    # if request.method == 'POST':
-    #     form = SubscriberForm(request.Post)
-    #     if form.is_valid():
-    #         form.save()
-    #         messages.success(request, 'Thank you for subscribing to our News')
-    #         return redirect('home')
-    #     else:
-    #         form = SubscriberForm()
+    if request.method == 'POST':
+        form = SubscribeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Thank you for subscribing to our News')
+            return redirect('home')
+        else:
+            form = SubscribeForm()
 
     context = {
         'products': products,

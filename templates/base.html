@@ -210,7 +210,7 @@
                             <form action="{% url 'home' %}" method="POST" class="subscribe-footer">
                                 {% csrf_token %}
                                
-                                {{ form.email|as_crispy_field }}
+                                {{ form|crispy }}
                                 
                                 <div class="form-group d-flex">
                                     <input type="submit" value="Subscribe" class="form-control btn btn-gold-blk head-text w-100">
