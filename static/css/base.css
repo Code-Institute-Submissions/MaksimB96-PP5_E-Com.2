@@ -27,10 +27,9 @@
         sans-serif;;
 }
 
-/* .nav-calc {
+.nav-calc {
     margin-top: 111px; 
-    height: 100vh;
-}  */
+} 
 
 .btn-gold-blk {
     background: var(--theme3);
@@ -383,6 +382,10 @@ body {
 @media only screen and (min-width:320px) and (max-width:768px) {
     .navbar-brand {
         font-size: 20px;
+    }
+
+    .nav-calc{
+        margin-top: 80px;
     }
 
     .sb-cont{
