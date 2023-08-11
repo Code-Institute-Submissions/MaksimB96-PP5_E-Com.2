@@ -206,8 +206,8 @@
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-instagram"></i></a>
                             <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-twitter"></i></a>
 
-                            <h2 class="footer-head head-text text-white pt-4">Subscribe to Our Letter!</h2>
-                            <form action="" method="POST" class="subscribe-footer">
+                            <h2 class="footer-head head-text text-white pt-4 {% if user.is_superuser %} d-none {% endif %}">Subscribe to Our Letter!</h2>
+                            <form method="POST" class="subscribe-footer {% if user.is_superuser %} d-none {% endif %}">
                                 {% csrf_token %}
                                
                                 {{ form|crispy }}
