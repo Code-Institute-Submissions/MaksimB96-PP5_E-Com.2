@@ -4,7 +4,7 @@
     --theme2: #000;
     --theme3: #FFD700;
     --drkgld: #ac9020;
-    --grey: #5A5A5A;
+    --grey: #6F777F;
 }
 
 /* ------------------------------------custom helper classes */
@@ -31,11 +31,13 @@
 .btn-gold-blk {
     background: var(--theme3);
     color: #000;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .btn-blk-gold{
     background: var(--theme2);
     color: var(--theme3);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 /* ------------------------------------Base-styling */
 .nav {
@@ -184,8 +186,6 @@
     border: none;
 }
 
-
-
 .logo-footer {
     height: 150px;
 }
@@ -210,6 +210,7 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
+
 #sec-a i {
     font-size: 30px;
 }
@@ -223,9 +224,6 @@
     height: 400px;
 }
 
-#sec-e {
-    background: var(--grey);
-}
 
 .product-image {
     background-image: url('/media/honey-haven-products.jpg');

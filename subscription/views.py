@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.mail import send_mail
+from django.conf import settings
 
 from django_pandas.io import read_frame
 
@@ -14,7 +15,7 @@ def admin_news_form(request):
     email_subs = Subscribers.objects.all()
     data_frame = read_frame(email_subs, fieldnames=['email'])
     mail_list = data_frame['email'].values.tolist()
-    forms = SubscriberAdminNews()
+    # forms = SubscriberAdminNews()
 
     if request.method == 'POST':
         forms = SubscriberAdminNews(request.POST)
@@ -27,13 +28,14 @@ def admin_news_form(request):
                 title,
                 news_body,
                 settings.DEFAULT_FROM_EMAIL,
-                [mail_list],
+                mail_list,
+                fail_silently=False,
             )
 
             messages.success(request, 'News Article has been sent to all subscribers!')
             return redirect('admin_news')
-        else:
-            forms = SubscriberAdminNews()
+    else:
+        forms = SubscriberAdminNews()
 
     context = {
         'forms': forms,
