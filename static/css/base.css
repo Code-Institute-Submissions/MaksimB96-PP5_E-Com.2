@@ -8,6 +8,10 @@
 }
 
 /* ------------------------------------custom helper classes */
+.tester{
+    background: red;
+}
+
 .head-text {
     font-family: 'Abril Fatface',
         cursive;
