@@ -27,8 +27,7 @@ def admin_news_form(request):
                 title,
                 news_body,
                 settings.DEFAULT_FROM_EMAIL,
-                mail_list,
-                fail_silently=False,
+                [mail_list],
             )
 
             messages.success(request, 'News Article has been sent to all subscribers!')
