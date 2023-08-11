@@ -2,6 +2,7 @@ from django.shortcuts import render
 from products.models import Product
 
 
+
 def index(request):
     """Main index page render"""
  
@@ -9,5 +10,5 @@ def index(request):
     context = {
         'products': products
     }
-    
+
     return render(request, 'home/index.html', context)
