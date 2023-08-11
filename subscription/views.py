@@ -26,7 +26,7 @@ def admin_news_form(request):
             send_mail(
                 title,
                 news_body,
-                settings.EMAIL_HOST_USER,
+                settings.DEFAULT_FROM_EMAIL,
                 mail_list,
                 fail_silently=False,
             )

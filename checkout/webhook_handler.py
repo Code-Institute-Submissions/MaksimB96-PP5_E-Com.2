@@ -32,7 +32,7 @@ class StripeWH_Handler:
         send_mail = (
             subject,
             body,
-            settings.EMAIL_HOST_USER,
+            settings.DEFAULT_FROM_EMAIL,
             [cust_email],
         )
 
