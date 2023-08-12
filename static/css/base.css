@@ -139,6 +139,7 @@
     top: 92px;
     left: 10px;
     z-index: 99999999999;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .custom-toast {
@@ -390,6 +391,8 @@ body {
 .login-detail-wrapper{
     height: 100vh;
 }
+
+.card
 
 /* ------------------------------------Media Queries*/
 
