@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.core.mail import send_mail
 
 from products.models import Product
 from subscription.models import Subscribers
@@ -16,7 +15,7 @@ def index(request):
         form = SubscribeForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thank you for subscribing to our News')
+            messages.info(request, 'Thank you for subscribing to our News')
             return redirect('home')
         else:
             form = SubscribeForm()
@@ -28,4 +27,4 @@ def index(request):
 
     return render(request, 'home/index.html', context)
 
-    # <input type="email" class="form-control" placeholder="Enter your e-mail here">
+ 

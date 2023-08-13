@@ -1,39 +1,411 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Honey Haven
 
-Welcome,
+(Developer: Maksims Buraks)
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mockup image](docs/mf-banner.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+[live web-page](https://maximus-booking-sys.herokuapp.com/)
 
-## Codeanywhere Reminders
+## Table of contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- [Honey Haven](#honey-have)
+  - [Table of contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+  - [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
+  - [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+    - [User Stories](#user-stories)
+      - [First-time User](#first-time-user)
+      - [Returning User](#returning-user)
+      - [Site Owner](#site-owner)
+  - [Design](#design)
+    - [Design Choices](#design-choices)
+    - [Kanban-Board](#kanban-board)
+    - [Colour](#colour)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+    - [Wireframes](#wireframes)
+  - [Tech Used](#tech-used)
+    - [Languages](#languages)
+    - [Tools](#tools)
+  - [Features](#features)
+    - [Logo and Nav-Bar](#logo-and-nav-bar)
+    - [](#)
+    - [Index](#index)
+    - [Contact Form](#contact-form)
+  - [Validation](#validation)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [Python Validation](#python-validation)
+    - [JS Validation](#js-validation)
+    - [Tests](#tests)
+      - [Devices tested on on:](#devices-tested-on-on)
+      - [Browser tested on on:](#browser-tested-on-on)
+  - [Deployment](#deployment)
+  - [Future Features](#future-features)
+  - [Credits](#credits)
+    - [Media](#media)
+    - [Code](#code)
+  - [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Project Overview
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+Welcome to Honey Haven, the one stop shop for everything related to natural honey as well as products! This project is essentially a proof of concept that will be worked on, and eventually become a fully fledged e-commerce store. Please note that while products at the moment are limited the end goal is to flesh it out once we determine exact products to be sold!
 
-`http_server`
+## Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+    -Finding a site that provides ability to book a one on one session
+    -To Create Bookings
+    -To Update Bookings
+    -To Delete Bookings
+    -To Manage Bookings
+    -To Create Account
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Site Owner Goals
 
-To log into the Heroku toolbelt CLI:
+    -Provide a simple and appealing manner in which to shop
+    -Provide an area to get in contact
+    -To manage and send news
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## User Experience
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Target Audience
 
----
+    -Honey enthusiasts local to Ireland
 
-Happy coding!
+### User Requirements and Expectations
+
+    -A simple and natural way to navigate the website
+    -Quick acessibility to relevant information
+    -Quick acessibility to relevant products
+    -Appealing design that responds accordingly
+    -User Subscribe functionality
+    -Detail view of products
+    -Login functionality in order to get in contact
+    
+
+### User Stories
+
+#### User
+
+
+#### Site Owner
+
+5
+
+
+## Design
+
+### Design Choices
+
+Website design was inspired by a variety of e-com websites, with the focus of the user having a clear goal. Every section is easy to understand, website flow is easy and navigation is intuative. Path to purchase is made as easy as possible
+
+
+### Kanban-Board
+
+A kanban board was utilised to set specific goals that would aid agile development!
+
+### Colour
+
+Colors used were the bootstrap bg dark with accents of grey and black and the main accent of yellow. These colors were chosen as all these tones play well together adding a layer of depth to the site while maintaining a minimal structure.
+<br>
+
+![Color Scheme]()
+
+### Fonts
+
+Fonts used were Abril Fatface with a fall back of cursive for the majority of headings as well as Lato with a fall back of sans-serif which I found complements the playful design of Abril and adds nice contrasts, as well as allowing users to quickly pick up on the vital points of info.
+
+### Structure
+
+The Structure of the website is clear and concise. Bright colors draw in the user, I untilised the rule of thirds on the home page to make the overall flow pleasant, as well as not over crowding areas with text. The aim was simple and clear, and specific towards an audience interested in honey produce. Navigation is intuative, and the path to purchase is simple and not cluttered.
+
+<br>
+
+The website is made up of multiple pages:
+
+    -The Index
+    -The Products
+    -The Product Detail
+    -The Bag
+    -Checkout Area
+    -Checkout Success
+    -User Profile (If authenticated)
+    -News Segment (If super User)
+    -Edit/Add segemt (If super User)
+    -Allauth essentials
+
+### Wireframes
+
+<details><summary>Index</summary><img src="docs/wireframes/index-wf.png"></details>
+
+<details><summary>Product View</summary><img src="docs/wireframes/products-wf.png"></details>
+
+<details><summary>Product Detail</summary><img src="docs/wireframes/product-d-wf.png"></details>
+
+<details><summary>Bag</summary><img src="docs/wireframes/bag-wf.png"></details>
+
+<details><summary>Checkout</summary><img src="docs/wireframes/check-out-wf.png"></details>
+
+<details><summary>Update/Delete</summary><img src="docs/wireframes/update:delete.png"></details>
+
+<details><summary>Admin Edit/Add</summary><img src="docs/wireframes/admin-edit-wf.png"></details>
+
+<details><summary>Admin News</summary><img src="docs/wireframes/admin-news-wf.png"></details>
+
+<details><summary>Allauth all portals</summary><img src="docs/wireframes/allauth-wf.png"></details>
+
+
+Core functionality and views remain the same throughout. Sign in/login pages are custom 
+
+-Tablet view is exactly the same as desktop!
+
+## Tech Used
+
+### Languages
+
+    -HTML
+    -CSS
+    -Java Script
+    -Pyhton
+    -Django
+    
+
+### Tools
+
+    -Git
+    -Git Hub
+    -Git Pod
+    -Balsamiq
+    -Google Fonts
+    -Adobe Color Wheel
+    -Font Awesome
+    -Favicon.io
+    -Circle Crop
+    -postgresql
+    -psycopg
+    -Canva
+    -Boot strap 4
+    -pixelr
+    -Django
+    -SummerNote
+    -Crispy Forms
+    -panda_io
+    -Amazon Web Services
+
+## Features
+
+
+
+### Logo and Nav-Bar
+
+    -featured on all three pages
+    -Options changed based on user authentication
+    -Nav bar is fully responsive and changes to a burger style on mobile devices. Nav bar links to all relevant pages allowing for quick access.
+    -Subtle animation for selected
+    -Pages 2/3 have a slight difference in appearance but over all same design in order to not disrupt immersion.-
+    relevant links lead to full Crud
+
+    
+![Logo & Navbar](docs/features/nav-user.png)
+
+<br>
+
+![Logo & Navbar](docs/features/nav-new.png)
+
+<br>
+
+![Logo & Navbar](docs/features/nav-burger-show.png)
+
+![Logo & Navbar](docs/features/nav-burger.png)
+
+
+### 
+
+    -footer conistent on all pages with hover effect in order to provide clear feedback on selection
+    
+![Footer and Selection](docs/features/footer.png)
+![Footer and Selection](docs/features/footer-select.png)
+
+
+
+### Index
+
+    -Clear UI
+    -Responsive
+    -Scroll reveal adds dynamic element to page
+    -message handeling
+   
+
+![Index Segment](docs/features/scrollreveal().png)
+
+
+### Contact Form
+
+    -Allows users to leave feedback for general queries and concerns
+    -Form validates email and name (full name and proper email)
+    -Form Sends back email to me as soon as user leaves feedback
+    -Clear feedback
+
+![Contact-form](docs/features/contact-form.png)
+
+<br>
+
+![Contact-form](docs/features/contact-segment.png)
+
+
+
+## Validation
+
+### HTML Validation
+W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. Warnings are related to various segments not using Headings, but utilise div elements.
+
+<details><summary>Index</summary>
+<img src="docs/validations/index-valid.png">
+</details>
+
+<details><summary>login</summary>
+<img src="docs/validations/login-valid.png">
+</details>
+
+<details><summary>logout</summary>
+<img src="docs/validations/logout-valid.png">
+</details>
+
+<details><summary>Manage</summary>
+<img src="docs/validations/manage-valifd-html.png">
+</details>
+
+<details><summary>Sign-Up</summary>
+<img src="docs/validations/sign-up-valid.png">
+</details>
+
+<details><summary>Delete</summary>
+<img src="docs/validations/delete-valid-html.png">
+</details>
+
+
+
+<br>
+
+### CSS Validation
+W3C CSS validator was utilised in order to make sure the css code passes standards with no errors.
+
+<details><summary>Full Document</summary>
+<img src="docs/validation/css-valid.png">
+</details>
+
+<br>
+
+### Python Validation
+
+CI Python linter used here
+
+<details><summary>Forms</summary>
+<img src="docs/validation/forms-py.png">
+</details>
+
+<details><summary>Model</summary>
+<img src="docs/validation/models-py.png">
+</details>
+
+
+<details><summary>View</summary>
+<img src="docs/validation/views-py.png">
+</details>
+
+### JS Validation
+JSHint validator was utilised in order to make sure the javascript code passes standards with no errors or warnings, All functions marked as "unused" are called on click in HTML code segments, images of relevnt code is attached to validations.
+
+<details><summary>Email Js And Script</summary>
+<img src="docs/validations/script.png">
+<img src="docs/validations/sendEmail..png">
+</details>
+
+<br>
+
+### Tests
+-login/Crud Functionality functionality:
+    <img src="docs/features/booking-created.png">
+    <img src="docs/features/admin-confirm.png">
+    <img src="docs/features/booking-delete.png">
+    <img src="docs/features/sign-in.png">
+    <img src="docs/features/sign-out.png">
+    <img src="docs/features/admin-view.png">
+
+
+#### Devices tested on on:
+    -Iphone SE, XR, 11, 12, 13
+    -Ipad
+    -Macbook Pro/Air
+    -Lenovo Platform
+    -Dell Platform
+
+#### Browser tested on on:
+    -Chrome
+    -Mozilla
+    -Safari
+    -Brave/Brave Mobile
+
+
+## Deployment
+
+Deployment of site was acheived through these steps:
+    -before deployment we soft deploy.
+    -This means set up all vars relating to urls and databases and configure the variables
+    -After Project completion and soft launch disable, disable_collect static and make sure debug is false
+    -Once all is in place commit changes to git hub, followed by deployment to Heroku
+    -Once deployment of site is complete you are provided with your app url!
+
+
+## Future Features
+
+There are a few more feartures that I would like to implement in the future. These Include:
+1.User Unsubscribe functionality 
+2.Rating System
+3.Flesh out the products 
+4.A Feedback Section/ Possibly rating system
+
+
+## Credits
+
+### Media
+
+All media created by me using  <a href="https://www.canva.com/">Canva</a>, this includes Icons and backgound images.
+<br>
+Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
+<br>
+
+    
+### Code 
+
+1. Booking System Inspiration SelmiTech : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Youtube</a>
+2. Preloader idea : <a href="https://www.youtube.com/watch?v=Yf5d_Zx3AaI">Youtube</a>
+3. ScrollReveal() function : <a href="https://www.youtube.com/watch?v=ePgnR4gHIi4">Youtube</a>
+4. Carousel ideas : <a href="Carousel">Codepen</a>
+5. Understanding Widgets : <a href ="https://simpleisbetterthancomplex.com/tutorial/2019/01/03/how-to-use-date-picker-with-django.html">Here</a>
+6. Heavy inspiration from CI Hello Django and Blog Walkthrough
+7. Bootstrap Documentation
+8. Django Documentation
+9. EmailJs instructions may be found on <a href="https://www.emailjs.com/">EmailJS</a>
+
+
+
+## Acknowledgements
+
+-I would like to thank my wonderful girfriend for the inspiration and idea conception
+<br>
+-CI for provide me the knowledge to under-take this task
+<br>
+-Tutor Support for provideing better knowledge to implement the code and salvaging my project, especially Sean and Ed
+<br>
+-CI Boutique Ado for a solid foundation and logic behind e-commerce applications
+<br>
+-The wonderful community over on Slack!
+<
