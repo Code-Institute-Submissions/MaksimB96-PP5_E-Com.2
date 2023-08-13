@@ -116,7 +116,7 @@ A kanban board was utilised to set specific goals that would aid agile developme
 Colors used were the bootstrap bg dark with accents of grey and black and the main accent of yellow. These colors were chosen as all these tones play well together adding a layer of depth to the site while maintaining a minimal structure.
 <br>
 
-![Color Scheme]()
+![Color Scheme](docs/colors.png)
 
 ### Fonts
 
@@ -153,7 +153,7 @@ The website is made up of multiple pages:
 
 <details><summary>Checkout</summary><img src="docs/wireframes/check-out-wf.png"></details>
 
-<details><summary>Update/Delete</summary><img src="docs/wireframes/update:delete.png"></details>
+<details><summary>Profile</summary><img src="docs/wireframes/profile-wf.png"></details>
 
 <details><summary>Admin Edit/Add</summary><img src="docs/wireframes/admin-edit-wf.png"></details>
 
@@ -161,10 +161,6 @@ The website is made up of multiple pages:
 
 <details><summary>Allauth all portals</summary><img src="docs/wireframes/allauth-wf.png"></details>
 
-
-Core functionality and views remain the same throughout. Sign in/login pages are custom 
-
--Tablet view is exactly the same as desktop!
 
 ## Tech Used
 
@@ -203,61 +199,6 @@ Core functionality and views remain the same throughout. Sign in/login pages are
 
 
 
-### Logo and Nav-Bar
-
-    -featured on all three pages
-    -Options changed based on user authentication
-    -Nav bar is fully responsive and changes to a burger style on mobile devices. Nav bar links to all relevant pages allowing for quick access.
-    -Subtle animation for selected
-    -Pages 2/3 have a slight difference in appearance but over all same design in order to not disrupt immersion.-
-    relevant links lead to full Crud
-
-    
-![Logo & Navbar](docs/features/nav-user.png)
-
-<br>
-
-![Logo & Navbar](docs/features/nav-new.png)
-
-<br>
-
-![Logo & Navbar](docs/features/nav-burger-show.png)
-
-![Logo & Navbar](docs/features/nav-burger.png)
-
-
-### 
-
-    -footer conistent on all pages with hover effect in order to provide clear feedback on selection
-    
-![Footer and Selection](docs/features/footer.png)
-![Footer and Selection](docs/features/footer-select.png)
-
-
-
-### Index
-
-    -Clear UI
-    -Responsive
-    -Scroll reveal adds dynamic element to page
-    -message handeling
-   
-
-![Index Segment](docs/features/scrollreveal().png)
-
-
-### Contact Form
-
-    -Allows users to leave feedback for general queries and concerns
-    -Form validates email and name (full name and proper email)
-    -Form Sends back email to me as soon as user leaves feedback
-    -Clear feedback
-
-![Contact-form](docs/features/contact-form.png)
-
-<br>
-
-![Contact-form](docs/features/contact-segment.png)
 
 
 
