@@ -392,17 +392,30 @@ body {
     height: 100vh;
 }
 
-.card
+.bag-detail-wrapper {
+    height: 100%;
+    margin-top: 100px;
+}
+
 
 /* ------------------------------------Media Queries*/
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+@media (min-width:320px) and (max-width:768px){
+
     .navbar-brand {
         font-size: 20px;
     }
 
     .nav-calc{
         margin-top: 70px;
+    }
+
+    .nav-calc-2{
+        margin-top: 70px;
+    }
+
+    .checkout-button-adjust{
+        font-size: 10px;
     }
 
     .sb-cont{
@@ -419,8 +432,11 @@ body {
     .login-detail-wrapper {
         height: 100vh;
         width: 100vw;
-        /* margin-top: 111px; */
         text-align: center;
+    }
+
+    .bag-detail-wrapper {
+        height: 100%;
     }
 
     .mobile-tab-width{
