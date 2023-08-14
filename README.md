@@ -122,6 +122,12 @@ A kanban board was utilised to set specific goals that would aid agile developme
 
 ![Kanban Board](docs/kanban.png)
 
+
+### ER Diagram
+Please find the Entity relationship diagram utilized to bring the project to fruition!
+
+![ER Diagram](docs/er.png)
+
 ### Colour
 
 Colors used were the bootstrap bg dark with accents of grey and black and the main accent of yellow. These colors were chosen as all these tones play well together adding a layer of depth to the site while maintaining a minimal structure.

@@ -52,7 +52,7 @@
                 <img src="{{ MEDIA_URL }}hh-products.jpg" class="img-fluid w-100 h-100">
             </div>
             <div class="col-md-6 text-center w-auto my-auto">
-                <h2 class="head-text py-3 text-light font-italic">
+                <h2 class="head-text py-3 text-light font-italic t-shadow">
                     "A Taste of Haven..."
                 </h2>
                 <p class="body-text py-3 px-4 text-light">
@@ -164,6 +164,28 @@
             </div>
 
             {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="sec-e">
+    <div class="container-fluid">
+        <div class="row toh-text">
+            <div class="col-md-4 m-0 p-0">
+                <img src="{{ MEDIA_URL }}honey-bee-flwr.jpg" class="img-fluid w-100 h-100">
+            </div>
+            <div class="col-md-8 text-center w-auto my-auto text-white cont-e">
+                
+                <h2 class="head-text mb-3 mt-5 t-shadow">
+                    Have Questions?
+                </h3>
+                <p class="body-text mb-3">
+                    Get In Contact by following the link! Our staff will get in touch as soon as possible!
+                </p>
+                
+                <a href="{% url 'contact_us' %}" class="btn btn-lg btn-gold-blk head-text rounded-0 mb-5">Get In Touch!</a>
+                
+            </div>
         </div>
     </div>
 </section>
