@@ -20,7 +20,7 @@ def index(request):
                 messages.error(request, 'This email has already subscribed!')
             else:
                 form_sub = SubscribeForm(request.POST)
-                sub_to_form = form.save(commit=False)
+                sub_to_form = form_sub.save(commit=False)
                 sub_to_form.email = email
                 sub_to_form.save()
                 messages.success(request, f'{email} has been added to our news list!')
