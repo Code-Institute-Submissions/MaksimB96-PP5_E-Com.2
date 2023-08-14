@@ -9,6 +9,7 @@ from profiles.forms import UserProfileForm
 from products.models import Product
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
+from subscription.forms import SubscribeForm
 
 import stripe
 import json
@@ -35,6 +36,8 @@ def cache_checkout_data(request):
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
+
+    form_sub = SubscribeForm()
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
@@ -132,6 +135,7 @@ def checkout(request):
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
+        'form_sub': form_sub,
     }
 
     return render(request, template, context)

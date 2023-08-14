@@ -10,7 +10,7 @@ from subscription.forms import SubscribeForm
 def index(request):
     """Main index page render and handles News Letter Subscribers"""
     products = Product.objects.filter(category__name='honey')
-    form = SubscribeForm()
+    form_sub = SubscribeForm()
 
     try:
         if request.method == 'POST':
@@ -19,7 +19,7 @@ def index(request):
             if email in subscribed:
                 messages.error(request, 'This email has already subscribed!')
             else:
-                form = SubscribeForm(request.POST)
+                form_sub = SubscribeForm(request.POST)
                 sub_to_form = form.save(commit=False)
                 sub_to_form.email = email
                 sub_to_form.save()
@@ -32,7 +32,7 @@ def index(request):
 
     context = {
         'products': products,
-        'form': form,
+        'form_sub': form_sub,
     }
 
     return render(request, 'home/index.html', context)

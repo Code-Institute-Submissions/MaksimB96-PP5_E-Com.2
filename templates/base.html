@@ -207,7 +207,7 @@
                             <form method="POST" class="subscribe-footer {% if user.is_superuser %} d-none {% endif %}">
                                 {% csrf_token %}
                                
-                                {{ form|crispy }}
+                                {{ form_sub|crispy }}
                                 
                                 <div class="form-group d-flex">
                                     <input type="submit" value="Subscribe" class="form-control btn btn-gold-blk head-text w-100 mr-2">

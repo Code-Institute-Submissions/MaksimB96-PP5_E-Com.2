@@ -6,12 +6,14 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category
 from .forms import ProductForm
+from subscription.forms import SubscribeForm
 
 
 def all_products(request):
     """View that renders all Products, and handles sorting/searching"""
 
     products = Product.objects.all()
+    form_sub = SubscribeForm()
     query = None
     categories = None
     sort = None
@@ -55,6 +57,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'form_sub': form_sub,
     }
 
     return render(request, 'products/products.html', context)
@@ -64,9 +67,11 @@ def product_detail(request, product_id):
     """View that renders selected Product"""
 
     product = get_object_or_404(Product, pk=product_id)
+    form_sub = SubscribeForm()
 
     context = {
         'product': product,
+        'form_sub': form_sub,
     }
 
     return render(request, 'products/product_detail.html', context)

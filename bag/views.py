@@ -1,12 +1,19 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
+
 from products.models import Product
+from subscription.forms import SubscribeForm
 
 
 def view_bag(request):
     """A view that dis[lays the contents of shopping bag"""
 
-    return render(request, 'bag/bag.html')
+    form_sub = SubscribeForm()
+    context = {
+        'form_sub': form_sub,
+    }
+
+    return render(request, 'bag/bag.html', context)
 
 
 def add_to_bag(request, item_id):
