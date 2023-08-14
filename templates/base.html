@@ -210,7 +210,8 @@
                                 {{ form|crispy }}
                                 
                                 <div class="form-group d-flex">
-                                    <input type="submit" value="Subscribe" class="form-control btn btn-gold-blk head-text w-100">
+                                    <input type="submit" value="Subscribe" class="form-control btn btn-gold-blk head-text w-100 mr-2">
+                                    <a href="{% url 'unsubscribe' %}" class="form-control btn btn-gold-blk head-text w-100 rounded-0">Unsubscribe</a>
                                 </div>
                             </form>
                         </div>

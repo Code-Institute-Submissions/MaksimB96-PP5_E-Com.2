@@ -38,6 +38,29 @@ def admin_news_form(request):
     context = {
         'forms': forms,
     }
-
     return render(request, 'subscription/newsletter.html', context)
+
+    
+def unsubscribe(request):
+
+    try:
+        subscribed = Subscribers.objects.values_list('email', flat=True)
+        if request.method == 'POST':
+            email = request.POST['email']
+
+            if email in subscribed:
+                remove_sub = Subscribers.objects.get(email=email)
+                remove_sub.delete()
+                messages.success(request, f'{email}, has been successfully removed!')
+            else:
+                messages.error(request, 'Sorry, this email is not previously subscribed!')
+
+            return redirect('home')
+            
+    except Exception:
+        messages.error(request, 'There seems to be a problem! Please try again later!')
+        return redirect('home')
+
+    return render(request, 'subscription/unsubscribe.html')
+
 

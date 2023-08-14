@@ -11,6 +11,7 @@ def index(request):
     """Main index page render and handles News Letter Subscribers"""
     products = Product.objects.filter(category__name='honey')
     form = SubscribeForm()
+
     try:
         if request.method == 'POST':
             email = request.POST['email']
@@ -35,5 +36,9 @@ def index(request):
     }
 
     return render(request, 'home/index.html', context)
+
+
+# def unsub(request):
+
 
  
