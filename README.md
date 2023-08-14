@@ -44,6 +44,7 @@
     - [Tests](#tests)
       - [Devices tested on on:](#devices-tested-on-on)
       - [Browser tested on on:](#browser-tested-on-on)
+  - [Bugs](#Bugs)
   - [Deployment](#deployment)
   - [Future Features](#future-features)
   - [Credits](#credits)
@@ -109,7 +110,11 @@ Website design was inspired by a variety of e-com websites, with the focus of th
 
 ### Kanban-Board
 
-A kanban board was utilised to set specific goals that would aid agile development!
+A kanban board was utilised to set specific goals that would aid agile development! For a detailed view of my goals please find it following the link:
+<br>
+<a href="https://github.com/users/MaksimB96/projects/7">Kanban Overview</a>
+
+![Kanban Board](docs/kanban.png)
 
 ### Colour
 
@@ -294,6 +299,15 @@ JSHint validator was utilised in order to make sure the javascript code passes s
     -Safari
     -Brave/Brave Mobile
 
+
+### Bugs
+
+During Development I ran in to a few bugs:
+
+-Media Files not fully rendering even with proper aws deployment:
+This was fixed by implementing a media context proccessor.
+
+-
 
 ## Deployment
 
