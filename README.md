@@ -11,6 +11,7 @@
 - [Honey Haven](#honey-have)
   - [Table of contents](#table-of-contents)
   - [Project Overview](#project-overview)
+  - [Business Model](#business-model)
   - [Project Goals](#project-goals)
     - [User Goals](#user-goals)
     - [Site Owner Goals](#site-owner-goals)
@@ -56,6 +57,11 @@
 ## Project Overview
 
 Welcome to Honey Haven, the one stop shop for everything related to natural honey as well as products! This project is essentially a proof of concept that will be worked on, and eventually become a fully fledged e-commerce store. Please note that while products at the moment are limited the end goal is to flesh it out once we determine exact products to be sold!
+
+
+## Business Model
+
+
 
 ## Project Goals
 

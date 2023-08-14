@@ -11,14 +11,23 @@ def index(request):
     """Main index page render and handles News Letter Subscribers"""
     products = Product.objects.filter(category__name='honey')
     form = SubscribeForm()
-    if request.method == 'POST':
-        form = SubscribeForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.info(request, 'Thank you for subscribing to our News')
-            return redirect('home')
-        else:
-            form = SubscribeForm()
+    try:
+        if request.method == 'POST':
+            email = request.POST['email']
+            subscribed = Subscribers.objects.values_list('email', flat=True)
+            if email in subscribed:
+                messages.error(request, 'This email has already subscribed!')
+            else:
+                form = SubscribeForm(request.POST)
+                sub_to_form = form.save(commit=False)
+                sub_to_form.email = email
+                sub_to_form.save()
+                messages.success(request, f'{email} has been added to our news list!')
+                return redirect('home')
+    except ValueError:
+        messages.error(request, "Email not valid!")
+        return redirect('home')
+            
 
     context = {
         'products': products,
