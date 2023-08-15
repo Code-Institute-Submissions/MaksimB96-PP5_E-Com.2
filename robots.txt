@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /profiles/
+Sitemap: https://honeyhaven-236ab8f8ceba.herokuapp.com/sitemap.xml
