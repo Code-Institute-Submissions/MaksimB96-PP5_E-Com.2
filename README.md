@@ -58,6 +58,10 @@
 
 Welcome to Honey Haven, the one stop shop for everything related to natural honey as well as products! This project is essentially a proof of concept that will be worked on, and eventually become a fully fledged e-commerce store. Please note that while products at the moment are limited the end goal is to flesh it out once we determine exact products to be sold!
 
+The website is a B2C and B2B model. It provides services to customers through shopping with a quick and easy pathway to purchase. User profiles display previous orders and the ability to save delivery info. The store also allows customers to subscribe to a news letter which in turn allows them to recieve emails updating them on new potential products and/or offers. There is a contact section that allows users to leave a message which will be displayed to the admin panel (future features will include a display of messages in the admin profile with a reply functionality)
+
+Admins have the ability to edit/update and delete items. Full editing of the bag items for Users are also available.
+
 
 ## Business Model
 
@@ -180,7 +184,7 @@ The website is made up of multiple pages:
 
 <details><summary>Admin Edit/Add</summary><img src="docs/wireframes/admin-edit-wf.png"></details>
 
-<details><summary>Admin News</summary><img src="docs/wireframes/admin-news-wf.png"></details>
+<details><summary>Admin News/Contact Form</summary><img src="docs/wireframes/admin-news-wf.png"></details>
 
 <details><summary>Allauth all portals</summary><img src="docs/wireframes/allauth-wf.png"></details>
 
@@ -201,7 +205,7 @@ The website is made up of multiple pages:
     -Git
     -Git Hub
     -Git Pod
-    -Balsamiq
+    -Figma
     -Google Fonts
     -Adobe Color Wheel
     -Font Awesome
@@ -213,7 +217,6 @@ The website is made up of multiple pages:
     -Boot strap 4
     -pixelr
     -Django
-    -SummerNote
     -Crispy Forms
     -panda_io
     -Amazon Web Services
@@ -321,24 +324,32 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 
 During Development I ran in to a few bugs:
 
-1. Media Files not fully rendering even with proper aws deployment:
+  Media Files not fully rendering even with proper aws deployment:
 
--This was fixed by implementing a media context proccessor.
+  -This was fixed by implementing a media context proccessor.
 
-2. Sorting and some categories did not work
+  Sorting and some categories did not work
 
--This was fixed by getting rid of the base js in the extended templates
+  -This was fixed by getting rid of the base js in the extended templates
+
+  Codeanywhere workspaces deletion.
+
+  -The cause of this was unknown, however thanks to Sean we migrated back to gitpod which was a more reliable IDE
+
+  Contact form server error.
+
+  -This was simply due to the db not being fully integrated
 
 3. Toast not
 
 ## Deployment
 
-Deployment of site was acheived through these steps:
-    -before deployment we soft deploy.
-    -This means set up all vars relating to urls and databases and configure the variables
-    -After Project completion and soft launch disable, disable_collect static and make sure debug is false
-    -Once all is in place commit changes to git hub, followed by deployment to Heroku
-    -Once deployment of site is complete you are provided with your app url!
+Honey Haven followed a multi-step deployment. The website was deployed as follows:
+
+### GitHub
+
+The process for github was as follows:
+  -
 
 
 ## Future Features

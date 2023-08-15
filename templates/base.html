@@ -1,13 +1,15 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    {% load static %}
+    
+    <head>
 
     {% block meta %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organic Honey sourced locally, naturally and ethically">
+    <meta name="keywords" content="organic, local, honey, ireland, cavan, honey products, honey accessories, dublin">
     {% endblock %}
 
     {% block extra_meta %}
@@ -199,9 +201,9 @@
                                 Follow Our Socials!
                             </h2>
 
-                            <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="#" class="socials-icon pr-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="socials-icon pr-1" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="socials-icon pr-1" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="socials-icon pr-1" rel="noopener"><i class="fa-brands fa-square-twitter"></i></a>
 
                             <h2 class="footer-head head-text text-white pt-4 {% if user.is_superuser %} d-none {% endif %}">Subscribe to Our Letter!</h2>
                             <form method="POST" class="subscribe-footer {% if user.is_superuser %} d-none {% endif %}">
