@@ -62,6 +62,8 @@ The website is a B2C and B2B model. It provides services to customers through sh
 
 Admins have the ability to edit/update and delete items. Full editing of the bag items for Users are also available.
 
+SEO scores returned high through out as the keywords helped optimize them!
+
 
 ## Business Model
 
@@ -285,15 +287,11 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 
 ### Performance
 
-Below is the performance of all pages:
+Below is the performance of all pages (note that performace was consistant across all pages with a high SEO):
 
 <details><summary>Performance</summary>
-<img src="docs/validation/python/subscription-view.png">
-<img src="docs/validation/python/subscription-view.png">
-<img src="docs/validation/python/subscription-view.png">
-<img src="docs/validation/python/subscription-view.png">
-<img src="docs/validation/python/subscription-view.png">
-<img src="docs/validation/python/subscription-view.png">
+<img src="docs/performance.png">
+
 </details>
 
 ### Tests
@@ -310,6 +308,8 @@ Below is the performance of all pages:
     -Chrome
     -Safari
     -Brave/Brave Mobile
+
+
 
 
 ### Bugs
@@ -331,6 +331,10 @@ During Development I ran in to a few bugs:
   Contact form server error.
 
   -This was simply due to the db not being fully integrated
+
+  Internal server error on deployed site
+
+  -This was a typo in the products view for loop which I did not commit, site works fine now
 
 3. Toast not
 
@@ -365,26 +369,36 @@ Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
 
 # Images
 
+1. Landing page - Kat Smith
+2. HoneySpoon - Mae My
+3. Spoon and honey - Daily Slowdown
+4. Small Jar - Dario Menendez
+5. Large Jar - Kier
+6. Bee suit - gryffn
+7. Lip Balm - Antoni Shkraba
+8. Candle - Jill Burrow
+9. Beeswax paper - Karina Zhukovskaya
+10. Bee Flower - Erik Kartis
+
 
 
     
 ### Code 
 
-1. Product/bag/checkout/search logic inspired by : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Code Institute Boutique Ado</a>
-2. Preloader idea : <a href="https://www.youtube.com/watch?v=Yf5d_Zx3AaI">Youtube</a>
-3. ScrollReveal() function : <a href="https://www.youtube.com/watch?v=ePgnR4gHIi4">Youtube</a>
-4. Carousel ideas : <a href="Carousel">Codepen</a>
-5. Understanding Widgets : <a href ="https://simpleisbetterthancomplex.com/tutorial/2019/01/03/how-to-use-date-picker-with-django.html">Here</a>
-6. Heavy inspiration from CI Hello Django and Blog Walkthrough
-7. Bootstrap Documentation
-8. Django Documentation
-9. EmailJs instructions may be found on <a href="https://www.emailjs.com/">EmailJS</a>
+1. Product/bag/checkout/search/wh handling logic inspired by : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Code Institute Boutique Ado</a>
+2. subscription form with my modifications by : <a href="https://www.youtube.com/watch?v=hWtlskOaFNI&t=3315s">KenBroTec</a>
+3. Interactive search bar : <a href="https://bbbootstrap.com/snippets/expandable-search-bar-12368750">bbbootstrap</a>
+4. Bootstrap Documentation
+5. Django Documentation
+6. Stripe Docs
+7. 
+
 
 
 
 ## Acknowledgements
 
--I would like to thank my wonderful girfriend for the inspiration and idea conception
+-I would like to thank my wonderful girfriend for the inspiration and idea conception, and for the slight scare at the hospital
 <br>
 -CI for provide me the knowledge to under-take this task
 <br>
