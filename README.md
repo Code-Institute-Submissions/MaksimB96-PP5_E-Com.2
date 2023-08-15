@@ -2,9 +2,9 @@
 
 (Developer: Maksims Buraks)
 
-![Mockup image](docs/mf-banner.png)
+![Mockup image](docs/am-i-responsive.png)
 
-[live web-page](https://maximus-booking-sys.herokuapp.com/)
+[live web-page](https://honeyhaven-236ab8f8ceba.herokuapp.com/)
 
 ## Table of contents
 
@@ -299,7 +299,7 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 
 
 #### Devices tested on on:
-    -Iphone SE, XR, 11, 12, 13
+    -Iphone SE, XR, 11, 12, 14, 14 pro, samsung s5
     -Ipad
     -Macbook Pro/Air
     -Lenovo Platform
@@ -307,7 +307,6 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 
 #### Browser tested on on:
     -Chrome
-    -Mozilla
     -Safari
     -Brave/Brave Mobile
 
@@ -338,21 +337,26 @@ There are a few more feartures that I would like to implement in the future. The
 2.Rating System
 3.Flesh out the products 
 4.A Feedback Section/ Possibly rating system
+5.Additional support through webkits for mozilla and other browsers
 
 
 ## Credits
 
 ### Media
 
-All media created by me using  <a href="https://www.canva.com/">Canva</a>, this includes Icons and backgound images.
+Logo media created by me using  <a href="https://www.canva.com/">Canva</a>, this includes Icons and backgound images.
 <br>
 Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
 <br>
 
+# Images
+
+
+
     
 ### Code 
 
-1. Booking System Inspiration SelmiTech : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Youtube</a>
+1. Product/bag/checkout/search logic inspired by : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Code Institute Boutique Ado</a>
 2. Preloader idea : <a href="https://www.youtube.com/watch?v=Yf5d_Zx3AaI">Youtube</a>
 3. ScrollReveal() function : <a href="https://www.youtube.com/watch?v=ePgnR4gHIi4">Youtube</a>
 4. Carousel ideas : <a href="Carousel">Codepen</a>
