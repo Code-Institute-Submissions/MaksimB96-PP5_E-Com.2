@@ -9,7 +9,9 @@ import stripe
 @require_POST
 @csrf_exempt
 def webhook(request):
-    """Listens for webhooks (code pasted from official stripe docs and modifications from boutique ado)"""
+    """Listens for webhooks
+    (code pasted from official stripe
+     docs and modifications from boutique ado)"""
 
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -44,9 +46,8 @@ def webhook(request):
     # Get the webhook type from Stripe
     event_type = event['type']
 
-   
     event_handler = event_map.get(event_type, handler.handle_event)
 
-   
     response = event_handler(event)
     return response
+    

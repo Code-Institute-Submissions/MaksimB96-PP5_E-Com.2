@@ -228,33 +228,11 @@ The website is made up of multiple pages:
 ## Validation
 
 ### HTML Validation
-W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. It is worth noting that .
+W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. It is worth noting that some pages with data_detail were thrown as errors which was not fixable
 
 <details><summary>HTML</summary>
 <img src="docs/validation/index-html.png">
 </details>
-
-<details><summary>login</summary>
-<img src="docs/validations/login-valid.png">
-</details>
-
-<details><summary>logout</summary>
-<img src="docs/validations/logout-valid.png">
-</details>
-
-<details><summary>Manage</summary>
-<img src="docs/validations/manage-valifd-html.png">
-</details>
-
-<details><summary>Sign-Up</summary>
-<img src="docs/validations/sign-up-valid.png">
-</details>
-
-<details><summary>Delete</summary>
-<img src="docs/validations/delete-valid-html.png">
-</details>
-
-
 
 <br>
 
@@ -262,32 +240,48 @@ W3C mark-up was utilised in order to validate html of the website. All Pages pas
 W3C CSS validator was utilised in order to make sure the css code passes standards with no errors.
 
 <details><summary>Full Document</summary>
-<img src="docs/validation/css-valid.png">
+<img src="docs/validation/css/css-valid.png">
 </details>
 
 <br>
 
 ### Python Validation
 
-CI Python linter used here
+CI Python linter used here to validate my views
 
-<details><summary>Forms</summary>
-<img src="docs/validation/forms-py.png">
+<details><summary>Home</summary>
+<img src="docs/validation/py/home-view.png">
 </details>
 
-<details><summary>Model</summary>
-<img src="docs/validation/models-py.png">
+<details><summary>Products</summary>
+<img src="docs/validation/py/products-view.png">
 </details>
 
-
-<details><summary>View</summary>
-<img src="docs/validation/views-py.png">
+<details><summary>Bag</summary>
+<img src="docs/validation/py/bag-view.png">
 </details>
+
+<details><summary>Checkout</summary>
+<img src="docs/validation/py/checkout-view.png">
+</details>
+
+<details><summary>Contacts</summary>
+<img src="docs/validation/py/contacts-view.png">
+</details>
+
+<details><summary>Profiles</summary>
+<img src="docs/validation/py/profiles-view.png">
+</details>
+
+<details><summary>Subscription</summary>
+<img src="docs/validation/py/subscription-view.png">
+</details>
+
 
 ### JS Validation
 JSHint validator was utilised in order to make sure the javascript code passes standards with no errors or warnings, All functions marked as "unused" are called on click in HTML code segments, images of relevnt code is attached to validations.
 
-<details><summary>Email Js And Script</summary>
+<details><summary>All js</summary>
 <img src="docs/validations/script.png">
 <img src="docs/validations/sendEmail..png">
 </details>
@@ -295,13 +289,6 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 <br>
 
 ### Tests
--login/Crud Functionality functionality:
-    <img src="docs/features/booking-created.png">
-    <img src="docs/features/admin-confirm.png">
-    <img src="docs/features/booking-delete.png">
-    <img src="docs/features/sign-in.png">
-    <img src="docs/features/sign-out.png">
-    <img src="docs/features/admin-view.png">
 
 
 #### Devices tested on on:
