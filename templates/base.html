@@ -27,7 +27,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -81,20 +81,15 @@
                         Categories
                     </a>
                     <div class="dropdown-menu bg-dark rounded-0 body-text w-50 dropdown-box" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=honey">Honey</a>
-                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=apparel">Clothing</a>
-                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=bee_gear">Beekeeper
-                            Gear</a>
-                        <a class="dropdown-item text-white " href="{% url 'products' %}?category=bees_wax">Bee-Wax</a>
-                        <a class="dropdown-item text-white "
-                            href="{% url 'products' %}?category=accessories">Accessories</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?category=honey">Honey</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?category=apparel">Clothing</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?category=bee_gear">Beekeeper Gear</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?category=bees_wax">Bee-Wax</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?category=accessories">Accessories</a>
                         <hr class="w-100 bg-light">
-                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=rating&direction=desc">By
-                            Rating</a>
-                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=price&direction=asc">By
-                            Price</a>
-                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=category&direction=asc">By
-                            Category</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+                        <a class="dropdown-item text-white" href="{% url 'products' %}?sort=category&direction=asc">By Category</a>
                         <a class="dropdown-item text-white" href="{% url 'products' %}">All Items</a>
                     </div>
                 </li>
@@ -222,7 +217,7 @@
             </div>
             <div class="row pt-4 border-top">
                 <div class="col-md-12 text-center">
-                    <img src="{{ MEDIA_URL }}honey-haven-logo.png" alt="" class="logo-footer py-1">
+                    <img src="{{ MEDIA_URL }}honey-haven-logo.png" alt="honey-haven-logo" class="logo-footer py-1">
                     <p class="body-text text-white">copyright @ Honey Haven</p>
                 </div>
             </div>
