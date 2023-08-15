@@ -116,7 +116,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     const nav = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
@@ -138,7 +138,7 @@
     });
 </script>
 
-<script type="text/javascript">
+<script">
     //Updates quantity on click event in bag.html
     $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
@@ -160,7 +160,7 @@
     });
 </script>
 
-<script type="text/javascript">
+<script>
     $(document).ready(function () {
         var submitIcon = $('.searchbar-icon');
         var inputArea = $('.searchbar-input');
