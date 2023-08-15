@@ -231,7 +231,7 @@ The website is made up of multiple pages:
 W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. It is worth noting that some pages with data_detail were thrown as errors which was not fixable
 
 <details><summary>HTML</summary>
-<img src="docs/validation/index-html.png">
+<img src="docs/validation/html/index-html.png">
 </details>
 
 <br>
@@ -250,31 +250,31 @@ W3C CSS validator was utilised in order to make sure the css code passes standar
 CI Python linter used here to validate my views
 
 <details><summary>Home</summary>
-<img src="docs/validation/py/home-view.png">
+<img src="docs/validation/python/home-view.png">
 </details>
 
 <details><summary>Products</summary>
-<img src="docs/validation/py/products-view.png">
+<img src="docs/validation/python/products-view.png">
 </details>
 
 <details><summary>Bag</summary>
-<img src="docs/validation/py/bag-view.png">
+<img src="docs/validation/python/bag-view.png">
 </details>
 
 <details><summary>Checkout</summary>
-<img src="docs/validation/py/checkout-view.png">
+<img src="docs/validation/python/checkout-view.png">
 </details>
 
 <details><summary>Contacts</summary>
-<img src="docs/validation/py/contacts-view.png">
+<img src="docs/validation/python/contacts-view.png">
 </details>
 
 <details><summary>Profiles</summary>
-<img src="docs/validation/py/profiles-view.png">
+<img src="docs/validation/python/profiles-view.png">
 </details>
 
 <details><summary>Subscription</summary>
-<img src="docs/validation/py/subscription-view.png">
+<img src="docs/validation/python/subscription-view.png">
 </details>
 
 
