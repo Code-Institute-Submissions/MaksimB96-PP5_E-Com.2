@@ -279,14 +279,22 @@ CI Python linter used here to validate my views
 
 
 ### JS Validation
-JSHint validator was utilised in order to make sure the javascript code passes standards with no errors or warnings, All functions marked as "unused" are called on click in HTML code segments, images of relevnt code is attached to validations.
-
-<details><summary>All js</summary>
-<img src="docs/validations/script.png">
-<img src="docs/validations/sendEmail..png">
-</details>
+JSHint validator was utilised in order to make sure the javascript code passes standards with no errors or warnings, all functions return without errors!
 
 <br>
+
+### Performance
+
+Below is the performance of all pages:
+
+<details><summary>Performance</summary>
+<img src="docs/validation/python/subscription-view.png">
+<img src="docs/validation/python/subscription-view.png">
+<img src="docs/validation/python/subscription-view.png">
+<img src="docs/validation/python/subscription-view.png">
+<img src="docs/validation/python/subscription-view.png">
+<img src="docs/validation/python/subscription-view.png">
+</details>
 
 ### Tests
 
