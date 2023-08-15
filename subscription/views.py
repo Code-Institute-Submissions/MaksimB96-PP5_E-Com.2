@@ -15,7 +15,6 @@ def admin_news_form(request):
     email_subs = Subscribers.objects.all()
     data_frame = read_frame(email_subs, fieldnames=['email'])
     mail_list = data_frame['email'].values.tolist()
- 
 
     if request.method == 'POST':
         forms = SubscriberAdminNews(request.POST)
@@ -30,7 +29,8 @@ def admin_news_form(request):
                 mail_list,
                 fail_silently=False,
             )
-            messages.success(request, 'News Article has been sent to all subscribers!')
+            messages.success(request, 'News Article has been \
+            sent to all subscribers!')
             return redirect('admin_news')
     else:
         forms = SubscriberAdminNews()
@@ -40,7 +40,7 @@ def admin_news_form(request):
     }
     return render(request, 'subscription/newsletter.html', context)
 
-    
+
 def unsubscribe(request):
 
     try:
@@ -51,16 +51,17 @@ def unsubscribe(request):
             if email in subscribed:
                 remove_sub = Subscribers.objects.get(email=email)
                 remove_sub.delete()
-                messages.success(request, f'{email}, has been successfully removed!')
+                messages.success(request, f'{email}, has\
+                 been successfully removed!')
             else:
-                messages.error(request, 'Sorry, this email is not previously subscribed!')
+                messages.error(request, 'Sorry,\
+                 this email is not previously subscribed!')
 
             return redirect('home')
-            
+
     except Exception:
-        messages.error(request, 'There seems to be a problem! Please try again later!')
+        messages.error(request, 'There \
+        seems to be a problem! Please try again later!')
         return redirect('home')
 
     return render(request, 'subscription/unsubscribe.html')
-
-

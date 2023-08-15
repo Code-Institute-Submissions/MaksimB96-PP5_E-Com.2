@@ -9,7 +9,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="card rounded-0 border-dark ">
                     <div class="card-body text-center mb-3">
-                        <form action="" method="POST" class="head-text">
+                        <form method="POST" class="head-text">
                             {% csrf_token %}
                             {{ forms|crispy }}
                             <input type="submit" class="btn btn-gold-blk head-text rounded-0 mt-3" value="Send Newsletter">

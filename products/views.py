@@ -92,7 +92,8 @@ def add_product(request):
             messages.success(request, "Product has been generated!")
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, "Whoops! There seems to be an error in your form.")
+            messages.error(request, "Whoops! There seems to \
+            be an error in your form.")
     else:
         form = ProductForm()
 
@@ -120,11 +121,12 @@ def edit_product(request, product_id):
             messages.success(request, 'Product updated successfully!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Whoops! There seems to be an error in your form!')
+            messages.error(request, 'Whoops! There \
+            seems to be an error in your form!')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are currently editing {product.name}')
-    
+
     template = 'products/edit_product.html'
     context = {
         'form': form,

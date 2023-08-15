@@ -9,7 +9,6 @@ from subscription.models import Subscribers
 from subscription.forms import SubscribeForm
 
 
-
 @login_required
 def profile(request):
     """Renders User Profile"""
@@ -21,7 +20,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile has been updated!')
         else:
-            messages.error(request, "Whoops! There seems to be an error in your form.")
+            messages.error(request, "Whoops! There seems\
+             to be an error in your form.")
     else:
         form = UserProfileForm(instance=profile)
 
@@ -40,10 +40,8 @@ def profile(request):
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
-    messages.info(request,
-        f'This is a past order for {order_number}.'
-        'A confirmation email was sent on the order date'
-    )
+    messages.info(request, f'This is a past order for {order_number}.' 'A\
+     confirmation email was sent on the order date')
 
     template = 'checkout/checkout_success.html'
     context = {

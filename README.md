@@ -134,7 +134,7 @@ A kanban board was utilised to set specific goals that would aid agile developme
 
 
 ### ER Diagram
-Please find the Entity relationship diagram utilized to bring the project to fruition!
+Please find the Entity relationship diagram utilized to bring the project to fruition! The bulk of the logic happens between the user and products which ultimatley resuts in the order being placed. The contact form is a stand alone form that gets submitted to the admin panel which later a staff member will get in contact with. Subscription forms store info in the db which is then used by the admin via the admin news segment to send news to a list of emails.
 
 ![ER Diagram](docs/er.png)
 
@@ -225,16 +225,13 @@ The website is made up of multiple pages:
 
 
 
-
-
-
 ## Validation
 
 ### HTML Validation
-W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. Warnings are related to various segments not using Headings, but utilise div elements.
+W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. It is worth noting that .
 
-<details><summary>Index</summary>
-<img src="docs/validations/index-valid.png">
+<details><summary>HTML</summary>
+<img src="docs/validation/index-html.png">
 </details>
 
 <details><summary>login</summary>

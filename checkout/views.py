@@ -28,8 +28,7 @@ def cache_checkout_data(request):
         return HttpResponse(status=200)
     except Exception as e:
         messages.error(request, 'Looks like we cannot proccess your payment \
-            at the moment, please try again later!'
-        )
+            at the moment, please try again later!')
         return HttpResponse(content=e, status=400)
 
 
@@ -74,11 +73,11 @@ def checkout(request):
                     else:
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
-                            order=order,
-                            product=product,
-                            quantity=quantity,
-                            product_size=size,
-                        )
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
+                            )
                             order_line_item.save()
 
                 except Product.DoesNotExist:
@@ -89,7 +88,8 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             messages.error(request, 'Whoops! error found in form! \
              Please check your form.')
@@ -126,7 +126,7 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-    
+
     if not stripe_public_key:
         messages.warning(request, 'Stripe Public Key not set!')
 
@@ -172,7 +172,7 @@ def checkout_success(request, order_number):
 
     if 'bag' in request.session:
         del request.session['bag']
-    
+
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
