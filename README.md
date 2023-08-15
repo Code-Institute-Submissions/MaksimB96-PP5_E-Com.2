@@ -315,10 +315,15 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 
 During Development I ran in to a few bugs:
 
--Media Files not fully rendering even with proper aws deployment:
-This was fixed by implementing a media context proccessor.
+1. Media Files not fully rendering even with proper aws deployment:
 
--
+-This was fixed by implementing a media context proccessor.
+
+2. Sorting and some categories did not work
+
+-This was fixed by getting rid of the base js in the extended templates
+
+3. Toast not
 
 ## Deployment
 
