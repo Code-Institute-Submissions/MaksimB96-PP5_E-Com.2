@@ -61,6 +61,12 @@ Welcome to Honey Haven, the one stop shop for everything related to natural hone
 
 ## Business Model
 
+# Facebook Page
+
+This project utilizes a facebook page to increase the clients reach and influence. It is based in cavan so the target audience would be local but through marketing it would allow to expand it's reach further in Ireland!
+
+![Facebook](docs/honey-haven-fb1.png)
+![Facebook](docs/honey-haven-fb2.png)
 
 
 ## Project Goals
