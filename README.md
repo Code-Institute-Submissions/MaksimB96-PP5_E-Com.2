@@ -601,7 +601,7 @@ Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
     
 ### Code 
 
-1. Product/bag/checkout/search/wh handling logic inspired by : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Code Institute Boutique Ado</a>
+1. Product/bag/checkout/search/wh handling logic (and some layout) inspired by : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Code Institute Boutique Ado</a>
 2. subscription form with my modifications by : <a href="https://www.youtube.com/watch?v=hWtlskOaFNI&t=3315s">KenBroTec</a>
 3. Interactive search bar : <a href="https://bbbootstrap.com/snippets/expandable-search-bar-12368750">bbbootstrap</a>
 4. Bootstrap Documentation
