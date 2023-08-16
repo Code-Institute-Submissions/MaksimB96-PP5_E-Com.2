@@ -69,6 +69,10 @@ This project utilizes a facebook page to increase the clients reach and influenc
 ![Facebook](docs/honey-haven-fb1.png)
 ![Facebook](docs/honey-haven-fb2.png)
 
+### SEO 
+
+For the seo, key words relating to honey, organics and accesories were streamlined. All relevant images have good alts and products have appropriate descriptions, all other content was made sure to not over saturate the website. The goal was to make the objective clear, what we offer and an easy way to access it.
+
 
 ## Project Goals
 
