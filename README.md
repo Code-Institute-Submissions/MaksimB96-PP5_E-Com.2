@@ -111,28 +111,21 @@ This project utilizes a facebook page to increase the clients reach and influenc
 - User Subscribe functionality
 - Detail view of products
 - Login functionality in order to get in contact
+- Subscription service 
     
-
-### User Stories
-
-#### User
-
-
-#### Site Owner
-
-5
-
 
 ## Design
 
-### Design Choices
+### Design Choices 
 
-Website design was inspired by a variety of e-com websites, with the focus of the user having a clear goal. Every section is easy to understand, website flow is easy and navigation is intuative. Path to purchase is made as easy as possible
+### UX
+
+Website design was inspired by a variety of e-com websites, with the focus of the user having a clear goal. Every section is easy to understand, website flow is easy and navigation is intuative. Path to purchase is made as easy as possible. Design choices were minimal, stripping back the fancy animations. Less is more, but at the same time the layout and design was focused on finding a balance between the 'less is more' and appealing design.
 
 
 ### Kanban-Board
 
-A kanban board was utilised to set specific goals that would aid agile development! For a detailed view of my goals please find it following the link:
+A kanban board was utilised to set specific goals that would aid agile development! All goals are subdivded into each respective epicFor a detailed view of my goals please find it following the link:
 <br>
 <a href="https://github.com/users/MaksimB96/projects/7">Kanban Overview</a>
 
@@ -295,7 +288,6 @@ Below is the performance of all pages (note that performace was consistant acros
 
 <details><summary>Performance</summary>
 <img src="docs/performance.png">
-
 </details>
 
 ### Tests
@@ -318,7 +310,21 @@ Below is the performance of all pages (note that performace was consistant acros
 
 ### Manual Tests
 
-Manual testing 
+Manual testing Through out the site focused on the core functionality. I had a sample group of individuals 10+ using a variety of devices to browse through it. 
+
+- Manual testing ensured that the main nav worked correctly, linking to their respective links. 
+
+- Product sorting was tested to ensure sorting and searching items worked as intended
+
+- Adding bag items was tested to ensure it worked as intended
+
+- Deleting/Updating an item was tested to ensure the bag view worked correctly along with bag tools working
+
+- Allauth Portals were tested to make sure that they worked as intended
+
+- News letter functionality was tested to ensure features worked correctly.
+
+- Contact section was ensured to work as intended (Admin message panel on front end considered for future development)
 
 
 
@@ -608,3 +614,10 @@ Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
 - CI Boutique Ado for a solid foundation and logic behind e-commerce applications
 - The wonderful community over on Slack!
 - The amazing studetnt support staff that helped me during my tough times
+
+
+### Side Note
+
+Due to the unfortunate circumstances that befell my partner, I missed the submission deadline due to the emergency, thanks to student support and the wonderful tutor team they helped me push through by giving me that extra bit of time. That being said I was still rushed to push the project, therefore I apologise in advance if the documentation was not fully completed.
+
+Thank you code institute for providing an amazing skill set that I will strive to refine and improve moving into this industry!
