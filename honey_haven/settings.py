@@ -146,7 +146,9 @@ else:
     }
 
 
-
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://fbxttult:8tBJ53kF7X1dNr8AZTjmaYnr5kyqX82H@trumpet.db.elephantsql.com/fbxttult')
+# }
     
 
 
