@@ -34,6 +34,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 
 
+
 ALLOWED_HOSTS = ['honeyhaven-236ab8f8ceba.herokuapp.com', '8000-maksimb96-pp5ecom-ikad6s7xcym.ws-eu105.gitpod.io']
 
 
