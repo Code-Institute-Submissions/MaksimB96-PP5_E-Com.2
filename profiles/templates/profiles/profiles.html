@@ -75,8 +75,8 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
-<script type="text/javascript">
+<script src="{% static 'profiles/js/countryfield.js' %}"></script>
+<script>
     const nav = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {

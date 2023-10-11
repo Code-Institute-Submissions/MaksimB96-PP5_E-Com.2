@@ -112,15 +112,3 @@ form.addEventListener('submit', function (ev) {
         location.reload();
     })
 });
-
-// const {token, error} = await stripe.createToken(card);
-
-//   if (error) {
-//     // Inform the customer that there was an error.
-//     const errorElement = document.getElementById('card-errors');
-//     errorElement.textContent = error.message;
-//   } else {
-//     // Send the token to your server.
-//     stripeTokenHandler(token); v 
-
-//   }

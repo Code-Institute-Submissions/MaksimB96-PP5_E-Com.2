@@ -316,25 +316,25 @@ Below is the performance of all pages (note that performace was consistant acros
 
 Manual testing Through out the site focused on the core functionality. I had a sample group of individuals 10+ using a variety of devices to browse through it. 
 
-- Manual testing ensured that the main nav worked correctly, linking to their respective links. 
+- Manual testing ensured that the main nav worked correctly, linking to their respective links. This included core functionality, mainly the nav scroll effect, expansion etc.
 
-- Product sorting was tested to ensure sorting and searching items worked as intended
+- Product sorting was tested to ensure sorting and searching items worked as intended. Subjects browsed all categories in order to get indended results
 
-- Adding bag items was tested to ensure it worked as intended
+- Adding bag items was tested to ensure it worked as intended. Once added it was important to see visuka feedback, correct totaling and a visual display of items in bag.
 
-- Deleting/Updating an item was tested to ensure the bag view worked correctly along with bag tools working
+- Deleting/Updating an item was tested to ensure the bag view worked correctly along with bag tools working. This was also tested for the admin side of things.
 
 - Allauth Portals were tested to make sure that they worked as intended
 
-- News letter functionality was tested to ensure features worked correctly.
+- News letter functionality was tested to ensure features worked correctly. This meant creating a letter and using the subscribed subjects, to receive the letter. It also ensured the letter functionality worked
 
-- Contact section was ensured to work as intended (Admin message panel on front end considered for future development)
+- Contact section was ensured to work as intended (Admin message panel on front end considered for future development). When contact was submitted, all messages would be stored in the DB for the admin to see.
 
 
 
 ### Bugs
 
-During Development I ran in to a few bugs.
+During Development I ran in to a few bugs. The last 2 issues prevented me from passing which were corrected now.
 
   Media Files not fully rendering even with proper aws deployment:
 
@@ -355,6 +355,14 @@ During Development I ran in to a few bugs.
   Internal server error on deployed site:
 
     -This was a typo in the products view for loop which I did not commit, site works fine now
+
+  Incorrect Totaling on checkout success:
+
+    -This was an error found in my signals which had a double typed function
+
+  Confirmation Email not sending:
+
+    -This was due to the send mail finction having an equals sign which prevented it from being called
 
 3. Toast not
 
@@ -555,7 +563,7 @@ It is worth mentioning how to clone/fork a project
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone a repo:
-   - `git clone https://github.com/Balkaneros91/Cubaneros-PP4.git`
+   - `git clone <repo link>`
 7. Press Enter to create your local clone.
 
 ### Forking
