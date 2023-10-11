@@ -231,7 +231,7 @@ The website is made up of multiple pages:
 ## Validation
 
 ### HTML Validation
-W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. It is worth noting that some pages with data_detail were thrown as errors which was not fixable
+W3C mark-up was utilised in order to validate html of the website. All Pages pass with no errors. Other significant urlls have been correected!
 
 <details><summary>HTML</summary>
 <img src="docs/validation/html/index-html.png">
@@ -250,7 +250,7 @@ W3C CSS validator was utilised in order to make sure the css code passes standar
 
 ### Python Validation
 
-CI Python linter used here to validate my views
+CI Python linter used here to validate my views, due to time constraints on resubmission, full screenshots not available, however views/modelss aand forms triple checked to make sure that the fall in line with pep standards
 
 <details><summary>Home</summary>
 <img src="docs/validation/python/home-view.png">
@@ -314,7 +314,7 @@ Below is the performance of all pages (note that performace was consistant acros
 
 ### Manual Tests
 
-Manual testing Through out the site focused on the core functionality. I had a sample group of individuals 10+ using a variety of devices to browse through it. 
+Manual testing Through out the site focused on the core functionality. I had a sample group of individuals 10+ using a variety of devices to browse through it. Please note that due to being tight on time full testing was diffficult to fully describe.
 
 - Manual testing ensured that the main nav worked correctly, linking to their respective links. This included core functionality, mainly the nav scroll effect, expansion etc.
 
@@ -364,7 +364,6 @@ During Development I ran in to a few bugs. The last 2 issues prevented me from p
 
     -This was due to the send mail finction having an equals sign which prevented it from being called
 
-3. Toast not
 
 ## Deployment
 
