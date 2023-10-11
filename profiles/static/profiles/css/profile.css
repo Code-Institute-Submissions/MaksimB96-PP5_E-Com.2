@@ -1,7 +1,7 @@
 /* --------------------update form */
 
 #profile-update-form .form-control {
-    color: #0000;
+    color: #000000;
 }
 
 #profile-update-form input::placeholder {
@@ -10,7 +10,7 @@
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color: #000;
+    color: #000000;
 }
 
 #id_default_country option:first-child {
