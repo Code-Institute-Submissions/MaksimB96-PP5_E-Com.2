@@ -7,7 +7,7 @@
 
 {% block content %}
 <div class="login-detail-wrapper d-flex align-items-center ">
-    <div class="container mb-2">
+    <div class="container mb-2 mt-5">
         <div class="row">
             <div class="col">
                 <hr>
@@ -21,7 +21,7 @@
                 <form action="{% url 'profile' %}" class="mt-2" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button class="btn rounded-0 head-text btn-gold-blk float-right">Update Info</button>
+                    <button class="btn rounded-0 head-text btn-gold-blk float-right mb-3">Update Info</button>
                 </form>
             </div>
             <div class="col-12 col-lg-6">

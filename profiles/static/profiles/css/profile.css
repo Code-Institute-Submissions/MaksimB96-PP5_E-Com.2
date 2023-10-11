@@ -4,6 +4,10 @@
     color: #0000;
 }
 
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
 #id_default_country,
 #id_default_country option:not(:first-child) {
     color: #000;
@@ -13,7 +17,11 @@
     color: #aab7c4;
 }
 
+.form-group{
+    margin-bottom: 10px !important;
+}
+
 .order-history {
-    max-height: 420px;
-    overflow-y: scroll;
+    max-height: 416px;
+    overflow-y: auto;
 }
