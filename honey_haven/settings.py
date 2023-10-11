@@ -27,8 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '(5u=1)_06qsy8i@+hk6_3%s0*waxjii(e2ty@(c1wn!jj-s%ho')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# 'DEVELOPMENT' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
+
 
 ALLOWED_HOSTS = ['honeyhaven-236ab8f8ceba.herokuapp.com', '8000-maksimb96-pp5ecom-ikad6s7xcym.ws-eu105.gitpod.io']
 
