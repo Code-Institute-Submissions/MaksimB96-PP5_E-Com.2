@@ -40,12 +40,12 @@
 {% block postloadjs %}
     {{ block.super }}
     <script>
-        $('#new-image').chnage(function(){{
+        $('#new-image').change(function(){
             var file = $('#new-image')[0].files[0]
             $('#filename').text(`Image will bet to: ${file.name}`)
-        }})
+        });
     </script>
-    <script type="text/javascript">
+    <script>
         const nav = document.querySelector('.navbar');
 
         window.addEventListener('scroll', () => {
