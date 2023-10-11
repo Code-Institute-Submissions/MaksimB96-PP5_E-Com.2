@@ -19,7 +19,7 @@ class OrderAdmin(admin.ModelAdmin):
               'street_address2', 'county', 'delivery_cost', 'order_total',
               'grand_total', 'original_bag', 'stripe_pid',)
 
-    list_display = ('order_number', 'date', 'full_name', 
+    list_display = ('order_number', 'date', 'full_name',
                     'order_total', 'delivery_cost', 'grand_total',)
 
     ordering = ('-date',)
